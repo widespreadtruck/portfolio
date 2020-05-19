@@ -79,8 +79,21 @@
     }
     &:hover .projectBox__button1 {
         opacity: 1;
+
+        &:hover {
+            background-color: white;
+            color: $red;
+        }
     }
     &:hover .projectBox__button2 {
+        opacity: 1;
+
+        &:hover {
+            background-color: white;
+            color: $red;
+        }
+    }
+    &:hover .projectBox__descript {
         opacity: 1;
     }
 
@@ -91,23 +104,56 @@
     } 
 }
 
-.projectBox__button1 {
+.projectName {
+    @include bor;
     position: absolute;
-    bottom: 15%;
-    left: 15%;
-    @include button;
-    border: 1px solid white;
-    opacity: 0;
-}
-.projectBox__button2 {
-    position: absolute;
-    bottom: 15%;
-    right: 15%;
-    @include button;
-    border: 1px solid white;
-    opacity: 0;
+    width: 28rem;
+    bottom: 40%;
+    left: calc((100% - 28rem) / 2);
+    opacity: 1;
 }
 
+.whiteLine {
+    position: absolute;
+    width: 35rem;
+    border-bottom: 1px solid white;
+    bottom: 40%;
+    left: calc((100% - 35rem) / 2);
+}
+
+
+.projectStack {
+    position: absolute;
+    width: 27rem;
+    bottom: 30%;
+    left: calc((100% - 27rem) / 2);
+    opacity: 1;
+}
+
+.projectBox__descript {
+    color: white;
+    position: absolute;
+    bottom: 20%;
+    opacity: 1;
+    left: 25%;
+}
+
+.projectBox__button1,
+.projectBox__button2 {
+    position: absolute;
+    bottom: 6%;
+    @include button;
+    border: 1px solid white;
+    opacity: 1;
+}
+
+.projectBox__button1 {
+    left: 15%;
+}
+
+.projectBox__button2 {
+    right: 15%;
+}
 
 
 

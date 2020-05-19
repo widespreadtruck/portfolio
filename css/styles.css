@@ -638,30 +638,53 @@ header {
     height: 100%; }
   .projectBox:hover .projectBox__button1 {
     opacity: 1; }
+    .projectBox:hover .projectBox__button1:hover {
+      background-color: white;
+      color: #e51d46; }
   .projectBox:hover .projectBox__button2 {
+    opacity: 1; }
+    .projectBox:hover .projectBox__button2:hover {
+      background-color: white;
+      color: #e51d46; }
+  .projectBox:hover .projectBox__descript {
     opacity: 1; }
   .projectBox img {
     display: block;
     width: 100%; }
 
-.projectBox__button1 {
+.projectName {
+  border: 1px solid red;
   position: absolute;
-  bottom: 15%;
-  left: 15%;
-  width: 15rem;
-  height: 4rem;
-  border-radius: 5px;
-  border: 1px solid #e51d46;
-  background-color: transparent;
-  color: white;
-  font-family: "Nunito Sans", sans-serif;
-  border: 1px solid white;
-  opacity: 0; }
+  width: 28rem;
+  bottom: 40%;
+  left: calc((100% - 28rem) / 2);
+  opacity: 1; }
 
+.whiteLine {
+  position: absolute;
+  width: 35rem;
+  border-bottom: 1px solid white;
+  bottom: 40%;
+  left: calc((100% - 35rem) / 2); }
+
+.projectStack {
+  position: absolute;
+  width: 27rem;
+  bottom: 30%;
+  left: calc((100% - 27rem) / 2);
+  opacity: 1; }
+
+.projectBox__descript {
+  color: white;
+  position: absolute;
+  bottom: 20%;
+  opacity: 1;
+  left: 25%; }
+
+.projectBox__button1,
 .projectBox__button2 {
   position: absolute;
-  bottom: 15%;
-  right: 15%;
+  bottom: 6%;
   width: 15rem;
   height: 4rem;
   border-radius: 5px;
@@ -670,7 +693,13 @@ header {
   color: white;
   font-family: "Nunito Sans", sans-serif;
   border: 1px solid white;
-  opacity: 0; }
+  opacity: 1; }
+
+.projectBox__button1 {
+  left: 15%; }
+
+.projectBox__button2 {
+  right: 15%; }
 
 .next {
   height: 60rem; }
