@@ -2,9 +2,34 @@
     border: 1px solid red
 }
 
+@mixin flexHor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexVer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button {
+    width: 15rem;
+    height: 4rem;
+    border-radius: 5px;
+    border: 1px solid $red;
+    background-color: transparent;
+    color: white;
+    font-family: $body-font;
+}
+
 $header-bg: #030724;
 $font-clr: #ffffff;
 $second-bg: #050A30;
+$red: #e51d46;
 
 $heading-font: "Playfair Display", serif;
 $body-font: "Nunito Sans", sans-serif;
@@ -31,16 +56,10 @@ header {
 }
 
 .hire-button {
-    width: 15rem;
-    height: 4rem;
-    border-radius: 5px;
-    border: 1px solid #e51d46;
-    background-color: transparent;
-    color: white;
-    font-family: $body-font;
+    @include button;
     
     &:hover {
-        background-color: #e51d46;
+        background-color: $red;
     } 
 }
 
@@ -295,11 +314,34 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    .aboutMeText.wrapper{
-        margin: 0;
-        padding: 0;
-        font-size: 3.6rem;
-        line-height: 5.8rem;
+}   
+
+.aboutMeText.wrapper{
+    margin: 0;
+    padding: 0;
+    font-size: 3.6rem;
+    line-height: 5.8rem;
+
+    span {
+        position: relative;
+        
+        &::after {
+            content: "";
+            // color: red;
+            width: 100%;
+            position: absolute;
+            display: inline-block;
+            border-bottom: 1px solid red;
+            bottom: 0.5rem;
+            left: 0;
+        }
+    }
+}
+
+.junoLink {
+    text-decoration: none;
+
+    &:visited {
+        color: white;
     }
 }

@@ -1,0 +1,119 @@
+.projects {
+    min-height: 600px;
+    // height: 100vh;
+    background-color: $second-bg;
+    
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // margin-bottom: 10rem;
+    }
+}
+
+.projects--title {
+    position: relative;
+    @include bor;
+    margin-top: 10rem;
+
+    .redLine {
+        position: absolute;
+        width: 5rem;
+        text-align: center;
+        border-bottom: 3px solid $red;
+        top: 0rem;
+        left: calc((100% - 5rem) / 2);
+    }
+
+    h2 {
+        font-size: 6rem;
+        font-family: $heading-font;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+}
+
+.projects--container {
+    width: 100%;
+    @include bor;
+    height: 60rem;
+    @include flexHor;
+
+    &__left {
+        flex: 1 0 45%;
+        @include bor;
+        margin-right: 1rem;
+
+    }
+    
+    &__right {
+        flex: 1 0 45%;
+        @include bor;
+        margin-left: 1rem;
+    }
+}
+
+.projectBox {
+    height: 550px;
+    width: 550px;
+    position: relative;
+    background-image: url(../assets/budgetCalc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 0%;
+        width: 100%;
+        bottom: 0;
+        transition: height 0.2s ease-out;
+        background-image: linear-gradient(to bottom, transparent 10%, $red 80%);
+        // opacity: 1;
+    }
+    
+    &:hover:before {
+        height: 100%;
+    }
+    &:hover .projectBox__button1 {
+        opacity: 1;
+    }
+    &:hover .projectBox__button2 {
+        opacity: 1;
+    }
+
+
+    img {
+        display: block;
+        width: 100%;
+    } 
+}
+
+.projectBox__button1 {
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+    @include button;
+    border: 1px solid white;
+    opacity: 0;
+}
+.projectBox__button2 {
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+    @include button;
+    border: 1px solid white;
+    opacity: 0;
+}
+
+
+
+
+
+
+// REMOVE!!!!!!!!
+.next {
+    height: 60rem;
+}

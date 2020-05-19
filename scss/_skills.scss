@@ -1,0 +1,113 @@
+.stackSection {
+    min-height: 600px;
+    // height: 100vh;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.stackSection--title {
+    position: relative;
+    // @include bor;
+    margin-top: 10rem;
+
+    .redLine {
+        position: absolute;
+        width: 5rem;
+        text-align: center;
+        border-bottom: 3px solid $red;
+        top: 0rem;
+        left: calc((100% - 5rem) / 2);
+    }
+
+    h2 {
+        font-size: 6rem;
+        font-family: $heading-font;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+}
+
+.stackSection--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // @include bor;
+    width: 100%;
+    margin-bottom: 10rem;
+
+    .skillList-left {
+        list-style: none;
+        // @include bor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 60%;
+        padding: 0;
+
+        li {
+            font-size: 11rem;
+            width: 11rem;
+            height: 11rem;
+            // @include bor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // margin: 3rem;
+        }
+    }
+
+    .skillList-firstRow,
+    .skillList-secondRow,
+    .skillList-thirdRow {
+        padding-right: 12rem;
+        width: 100%;
+        // @include bor;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+    }
+    
+    .skillList-firstRow,
+    .skillList-secondRow {
+        margin-bottom: 3rem;
+    }
+
+    .skillList-right {
+        // @include bor;
+        flex: 1 0 40%;
+        display: flex;
+        justify-content: flex-end;
+        // align-items: flex-end;
+        // right: 0;
+        // top: 0;
+        // align-self: flex-end;
+
+
+        img {
+            display: block;
+            // @include bor;
+            // margin: 0 auto;
+            // margin-right: 0;
+
+        }
+    }
+}
+
+.skillList-thirdRow li img {
+    width: 100%;
+    color: white;
+}
+
+.skillList-left li i:hover,
+.skillList-left li img:hover {
+    // @include bor;
+    scale: 1.05;
+    transition: 0.4s ease;
+}
