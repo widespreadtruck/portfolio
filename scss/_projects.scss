@@ -1,0 +1,221 @@
+.projects {
+    min-height: 600px;
+    // height: 100vh;
+    background-color: $second-bg;
+    
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        // margin-bottom: 10rem;
+    }
+}
+
+.projects--container {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    // @include bor;
+}
+
+.projects--title {
+    width: 100%;
+    position: relative;
+    // @include bor;
+    margin-top: 10rem;
+
+    .redLine {
+        position: absolute;
+        width: 5rem;
+        border-bottom: 3px solid $red;
+        top: 0rem;
+        left: calc((100% - 5rem) / 2);
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 6rem;
+        font-family: $heading-font;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+
+    }
+}
+
+.projects--container {
+    width: 100%;
+    // @include bor;
+    // height: 60rem;
+    @include flexHor;
+    align-items: flex-start;
+
+    &__left {
+        flex: 1 0 45%;
+        // @include bor;
+        margin-right: 1rem;
+
+    }
+    
+    &__right {
+        flex: 1 0 45%;
+        // @include bor;
+        margin-left: 1rem;
+    }
+}
+
+
+//left side
+.projectBoxLarge {
+    border-radius: 5px;
+    height: 550px;
+    width: 563px;
+    position: relative;
+    background-image: url(../assets/budgetCalc1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &:hover .projectBox-titles {
+        opacity: 1;
+        transition: 1s ease;
+    }
+
+    &:before {
+        border-radius: 5px;
+        content: '';
+        display: block;
+        position: absolute;
+        height: 0%;
+        width: 100%;
+        bottom: 0;
+        transition: height 0.6s ease-out;
+        background-image: linear-gradient(to bottom, transparent 0%, $red 40%);
+    }
+    
+    &:hover:before {
+        height: 100%;
+    }
+
+    &:hover .projectBox__button1, .projectBox__button2 {
+        &:hover {
+            background-color: white;
+            color: $red;
+        }
+    }
+}
+
+.projectBox-titles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 563px;
+    height: 275px;
+    // @include bor;
+    @include flexVer;
+    opacity: 0;
+}
+
+.projectBoxLarge .projectBox-titles {
+    margin-bottom: 5rem;
+}
+
+
+.projectName {
+    font-family: $heading-font;
+    bottom: 40%;
+}
+
+.whiteLine {
+    width: 35rem;
+    border-bottom: 1px solid white;
+}
+
+.projectStack {
+    margin: 1rem auto;
+}
+
+.projectBox__descript {
+    width: 85%;
+    // @include bor;
+    margin-top: 0;
+    text-align: center;
+}
+
+.projectBox__button1,
+.projectBox__button2 {
+    @include button;
+    border: 1px solid white;
+
+    &:hover a {
+        color: $red;
+    }
+
+    a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding-top: 7%;
+    }
+}
+
+
+
+
+
+// REMOVE!!!!!!!!
+.next {
+    height: 60rem;
+}
+
+
+
+
+//right side
+.projectBoxSmall.upperBox {
+    background-image: url(../assets/pokemon.png);
+}
+.projectBoxSmall.bottomBox {
+    background-image: url(../assets/booking.png);
+}
+
+.projectBoxSmall.upperBox {
+    margin-bottom: 2rem;
+}
+
+.projectBoxSmall {
+    border-radius: 5px;
+    height: 320px;
+    width: 563px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &:hover .projectBox-titles {
+        opacity: 1;
+        transition: 1s ease;
+    }
+
+    &:before {
+        border-radius: 5px;
+        content: '';
+        display: block;
+        position: absolute;
+        height: 0%;
+        width: 100%;
+        bottom: 0;
+        transition: height 0.6s ease-out;
+        background-image: linear-gradient(to bottom, transparent 0%, $red 40%);
+    }
+    
+    &:hover:before {
+        height: 100%;
+    }
+
+    &:hover .projectBox__button1, .projectBox__button2 {
+        &:hover {
+            background-color: white;
+            color: $red;
+        }
+    }
+}
+
+
