@@ -160,28 +160,34 @@
                 </div>
                 <div class="contact--container">
                     <div class="contact--container__left">
+                        <div class="contact--container__triangle">
+                            <img src="./assets/10.png" alt="triangle">
+                        </div>
                         <div><img src="./assets//exp.png" alt="an illustration of a person with a laptop"></div>
                     </div>
                     <div class="contact--container__right">
                         <h3>Have a project? Get in touch!</h3>
                         <div><a href="mailto:hello@nikitaguliaev.com">hello@nikitaguliaev.com</a></div>
                         <p>-OR-</p>
-                        <form action="" class="contact--formBox">
+                        <form method="POST" action="https://formspree.io/xqkyejev" class="contact--formBox">
                             <!-- <div class="contact--formBox__nameEmailBox"> -->
-                                <label for="name"></label>
+                                <label for="name" aria-label="What's your name?"></label>
                                 <input
-                                placeholder="Name..."
+                                placeholder="Name"
+                                name="name"
                                 type="text" id="name">
     
-                                <label for="email"></label>
+                                <label for="email" aria-label="What's your email?"></label>
                                 <input
-                                placeholder="Email..."
+                                placeholder="Email"
+                                name="email"
                                 type="text" id="email">
                             <!-- </div> -->
                             <!-- <div class="contact--formBox__messageBox"> -->
-                                <label for="message"></label>
+                                <label for="message" aria-label="What's your message?"></label>
                                 <textarea
-                                placeholder="Message..."
+                                placeholder="Message"
+                                name="message"
                                 type="text" id="message"></textarea>
 
                                 <input type="submit" value="Send">

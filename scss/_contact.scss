@@ -15,23 +15,8 @@
         // @include bor;
         flex: 1 0 40%;
         // height: 100%;
-
-
-
-        //need to move image higher?
-        // div {
-        //     display: flex;
-        //     // justify-content: flex-start;
-        //     align-items: flex-start;
-
-        // }
-
-
-        img {
-            // height: 100%;
-            // @include bor;
-            // width: 85%;
-        }
+        align-self: center;
+        position: relative;
     }
 
     .contact--container__right {
@@ -46,6 +31,24 @@
         }
         p {
             margin: 3rem 0;
+        }
+    }
+}
+
+.contact--container__triangle {
+    position: absolute;
+    top: -20rem;
+    left: 0;
+    width: 3rem;
+    height: 3rem;
+    img {
+        // display: block;
+        width: 100%;
+        animation: spin 15s linear infinite;
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
         }
     }
 }
@@ -83,7 +86,7 @@
     textarea {
         // flex: 1 0 90%;
         width: 100%;
-        height: 8rem;
+        height: 10rem;
     }
 }
 
