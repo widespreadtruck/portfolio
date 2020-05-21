@@ -13,19 +13,21 @@
 <body>
     <header>
     <div class="nav-wrapper">
-        <nav class="header--nav">
-            <div class="header-hire">
-                <button class="hire-button">Download CV</button>
-            </div>
-            <ul class="header-navig">
-                <a class="header--nav__a" href="#">Home</a>
-                <a class="header--nav__a" href="#">Skills</a>
-                <a class="header--nav__a" href="#">Experience</a>
-                <a class="header--nav__a" href="#">Education</a>
-                <a class="header--nav__a" href="#">Projects</a>
-                <a class="header--nav__a" href="#">Contact</a>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <nav class="header--nav">
+                <div class="header-hire">
+                    <button class="hire-button">Download CV</button>
+                </div>
+                <ul class="header-navig">
+                    <a class="header--nav__a" href="#">Home</a>
+                    <a class="header--nav__a" href="#">Skills</a>
+                    <a class="header--nav__a" href="#">Experience</a>
+                    <a class="header--nav__a" href="#">Education</a>
+                    <a class="header--nav__a" href="#">Projects</a>
+                    <a class="header--nav__a" href="#">Contact</a>
+                </ul>
+            </nav>
+        </div>
     </div>
     <div class="header-content">
         <div class="wrapper">
@@ -61,13 +63,13 @@
     </div>
     </header>
     <main>
-        <div class="about">
+        <section class="about">
             <h3 class="aboutMeText wrapper">I am a <span>Web Developer</span> with a strong Financial Intelligence background. Having worked for and at <span>RBC</span>, <span>Scotiabank</span> and <span>TD</span>, I’m
             bringing 4 years of banking and consulting experience. My superpower is the combo of having been on the client side
             (<span>Product</span> <span>Owner</span>, <span>Team Lead</span>) as well as having recently upgraded my skill set at <span><a class="junoLink" href="https://junocollege.com/" target="_blank"> Juno College of
             Technology</a></span>. Now I’d love to put my Tech and Finance skills to work for your company.</h3>
-        </div>
-        <div class="stackSection">
+        </section>
+        <section class="stackSection">
             <div class="wrapper">
                 <div class="stackSection--title">
                     <div class="redLine"></div>
@@ -94,8 +96,8 @@
                     <div class="skillList-right"><img src="./assets/2.png" alt="an illustration of a developer sitting in front of a computer"></div>
                 </div>
             </div>
-        </div>
-        <div class="projects">
+        </section>
+        <section class="projects">
             <div class="wrapper">
                 <div class="projects--title">
                     <div class="redLine"></div>
@@ -146,14 +148,54 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="next">
+        </section>
+        <section class="contact">
+            <div class="wrapper">
+                <div class="projects--title">
+                    <div class="redLine"></div>
+                    <h2>Contacts</h2>
+                </div>
+                <div class="contact--container">
+                    <div class="contact--container__left">
+                        <div><img src="./assets//exp.png" alt="an illustration of a person with a laptop"></div>
+                    </div>
+                    <div class="contact--container__right">
+                        <h3>Have a project? Get in touch!</h3>
+                        <div><a href="mailto:hello@nikitaguliaev.com">hello@nikitaguliaev.com</a></div>
+                        <p>-OR-</p>
+                        <form action="" class="contact--formBox">
+                            <!-- <div class="contact--formBox__nameEmailBox"> -->
+                                <label for="name"></label>
+                                <input
+                                placeholder="Name..."
+                                type="text" id="name">
+    
+                                <label for="email"></label>
+                                <input
+                                placeholder="Email..."
+                                type="text" id="email">
+                            <!-- </div> -->
+                            <!-- <div class="contact--formBox__messageBox"> -->
+                                <label for="message"></label>
+                                <textarea
+                                placeholder="Message..."
+                                type="text" id="message"></textarea>
 
-        </div>
+                                <input type="submit" value="Send">
+                            <!-- </div> -->
+                            
+                        </form>
+                    </div>
+                </div>
+        </section>
+        <footer class="footer">
+            <div class="wrapper">
+                
+            </div>
+        </footer>
     </main>
 </body>
 </html>
