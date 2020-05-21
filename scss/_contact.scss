@@ -102,7 +102,7 @@
     }
 }
 
-input[type="submit"] {
+.submit {
     @include button;
     align-self: flex-start;
     margin-top: 2rem;
