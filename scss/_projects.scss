@@ -19,6 +19,7 @@
 }
 
 .projects--title {
+    // @include bor;
     width: 100%;
     position: relative;
     // @include bor;
@@ -117,7 +118,9 @@
 .projectBoxLarge .projectBox-titles {
     margin-bottom: 5rem;
 }
-
+.projectBoxSmall.bottomBox .projectBox-titles {
+    margin-bottom: 1rem;
+}
 
 .projectName {
     font-family: $heading-font;
@@ -155,15 +158,6 @@
         height: 100%;
         padding-top: 7%;
     }
-}
-
-
-
-
-
-// REMOVE!!!!!!!!
-.next {
-    height: 60rem;
 }
 
 

@@ -57,7 +57,14 @@ a {
 }
 
 header {
-    height: 85vh;
+// height: 85vh;
+}
+
+.wrapper {
+    width: $wrapper-width;
+    margin: 0 auto;
+    max-width: 1080px;
+
 }
 
 .hire-button {
@@ -80,9 +87,9 @@ header {
 }
 
 .header--nav {
-    height: 100%;
+    height: 15vh;
     // @include bor;
-    width: $wrapper-width;
+    // width: $wrapper-width;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 3fr 5fr;
@@ -114,22 +121,16 @@ header {
 }
 
 //styles under nav bar
-.wrapper {
-    max-width: $wrapper-width;
-    margin: 0 auto;
-}
-
-
 .header-content {
     z-index: -1;
     margin-top: 15vh;
-    height: 85vh;
+// height: 85vh;
     // border: 1px solid white;
     background-color: $header-bg;
 
     .header-content__container {
         // border: 1px solid yellow;
-        height: 85vh;
+// height: 85vh;
         // min-height: 540px;
         display: grid;
         grid-template-columns: 5fr 3fr;
@@ -170,6 +171,7 @@ header {
     // height: 1000%;
     // object-fit: fill;
     // z-index: 1;
+    border-radius: 5px;
     }
 
 //I am Nikita styles
@@ -309,8 +311,6 @@ header {
 
 //main styles
 // About section
-
-
 .about {
     background-color: $second-bg;
     // background-color: red;

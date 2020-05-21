@@ -204,8 +204,10 @@ a {
   text-decoration: none;
   color: #ffffff; }
 
-header {
-  height: 85vh; }
+.wrapper {
+  width: 82%;
+  margin: 0 auto;
+  max-width: 1080px; }
 
 .hire-button {
   width: 15rem;
@@ -227,8 +229,7 @@ header {
   z-index: 10; }
 
 .header--nav {
-  height: 100%;
-  width: 82%;
+  height: 15vh;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -257,17 +258,11 @@ header {
       -ms-grid-column-align: right;
       justify-self: right; }
 
-.wrapper {
-  max-width: 82%;
-  margin: 0 auto; }
-
 .header-content {
   z-index: -1;
   margin-top: 15vh;
-  height: 85vh;
   background-color: #030724; }
   .header-content .header-content__container {
-    height: 85vh;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 5fr 3fr;
@@ -282,7 +277,8 @@ header {
 
 .container-right .nikitaImg {
   display: block;
-  width: 540px; }
+  width: 540px;
+  border-radius: 5px; }
 
 .decor-triangle,
 .decor-circle,
@@ -675,6 +671,9 @@ header {
 .projectBoxLarge .projectBox-titles {
   margin-bottom: 5rem; }
 
+.projectBoxSmall.bottomBox .projectBox-titles {
+  margin-bottom: 1rem; }
+
 .projectName {
   font-family: "Playfair Display", serif;
   bottom: 40%; }
@@ -710,9 +709,6 @@ header {
     width: 100%;
     height: 100%;
     padding-top: 7%; }
-
-.next {
-  height: 60rem; }
 
 .projectBoxSmall.upperBox {
   background-image: url(../assets/pokemon.png); }
@@ -755,3 +751,125 @@ header {
   .projectBoxSmall:hover .projectBox__button1:hover, .projectBoxSmall .projectBox__button2:hover {
     background-color: white;
     color: #e51d46; }
+
+.contact {
+  min-height: 60rem; }
+  .contact .projects--title h2 {
+    margin-bottom: 5rem; }
+
+.contact--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .contact--container .contact--container__left {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 40%;
+    flex: 1 0 40%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    position: relative; }
+  .contact--container .contact--container__right {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 50%;
+    flex: 1 0 50%; }
+    .contact--container .contact--container__right h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 3.8rem;
+      margin-top: 0;
+      margin-bottom: 5rem; }
+    .contact--container .contact--container__right p {
+      margin: 3rem 0; }
+
+.contact--container__triangle {
+  position: absolute;
+  top: -20rem;
+  left: 0;
+  width: 3rem;
+  height: 3rem; }
+  .contact--container__triangle img {
+    width: 100%;
+    -webkit-animation: spin 15s linear infinite;
+    animation: spin 15s linear infinite; }
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.contact--container__right a {
+  font-size: 3rem;
+  position: relative; }
+  .contact--container__right a:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0.5rem;
+    right: 0;
+    border-bottom: 13px solid #e51d46;
+    width: 32rem;
+    z-index: -1; }
+
+.contact--formBox {
+  margin-top: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%; }
+  .contact--formBox input[type="text"] {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 4rem; }
+  .contact--formBox textarea {
+    width: 100%;
+    height: 10rem; }
+
+.contact--formBox input[type="text"],
+.contact--formBox textarea {
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white; }
+  .contact--formBox input[type="text"]:hover,
+  .contact--formBox textarea:hover {
+    border-bottom: 1px solid #e51d46; }
+
+input[type="submit"] {
+  width: 15rem;
+  height: 4rem;
+  border-radius: 5px;
+  border: 1px solid #e51d46;
+  background-color: transparent;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 10rem; }
+  input[type="submit"]:hover {
+    background-color: #e51d46;
+    color: white; }
+
+.footer {
+  min-height: 600px;
+  background-color: #050A30; }
