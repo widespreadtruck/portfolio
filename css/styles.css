@@ -192,7 +192,8 @@ html {
 html {
   font-size: 62.5%;
   font-family: "Nunito Sans", sans-serif;
-  background-color: #030724; }
+  background-color: #030724;
+  scroll-behavior: smooth; }
 
 body {
   color: #ffffff;
@@ -377,20 +378,21 @@ a {
     font-weight: 200;
     margin: 0;
     padding: 0; }
-  .iAmNikita .socialLinks {
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 6rem;
-    margin-bottom: 0;
-    padding: 0 0 0 0; }
-    .iAmNikita .socialLinks li {
-      margin-right: 4rem; }
-      .iAmNikita .socialLinks li a {
-        width: 4rem;
-        color: white;
-        font-size: 2.3rem; }
+
+.socialLinks {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 6rem;
+  margin-bottom: 0;
+  padding: 0 0 0 0; }
+  .socialLinks li {
+    margin-right: 4rem; }
+    .socialLinks li a {
+      width: 4rem;
+      color: white;
+      font-size: 2.3rem; }
 
 .about {
   background-color: #050A30;
@@ -849,7 +851,7 @@ a {
   color: white;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid #7f7c99; }
   .contact--formBox input[type="text"]:hover,
   .contact--formBox textarea:hover {
     border-bottom: 1px solid #e51d46; }
@@ -871,5 +873,32 @@ a {
     color: white; }
 
 .footer {
-  min-height: 600px;
-  background-color: #050A30; }
+  min-height: 300px;
+  background-color: #020414; }
+  .footer .footer--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .footer .footer--container h4 {
+      font-family: "Playfair Display", serif;
+      font-size: 2.4rem;
+      margin-bottom: 0rem;
+      margin-top: 10rem; }
+    .footer .footer--container .socialLinks {
+      margin: 3rem auto; }
+    .footer .footer--container p {
+      margin-top: 0;
+      margin-bottom: 10rem; }
+
+.socialLinks li {
+  margin: 0 2rem; }

@@ -1,6 +1,5 @@
 .stackSection {
     min-height: 600px;
-    // height: 100vh;
 
     .wrapper {
         display: flex;
@@ -12,7 +11,6 @@
 
 .stackSection--title {
     position: relative;
-    // @include bor;
     margin-top: 10rem;
 
     .redLine {
@@ -37,13 +35,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    // @include bor;
     width: 100%;
     margin-bottom: 10rem;
 
     .skillList-left {
         list-style: none;
-        // @include bor;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -55,11 +51,9 @@
             font-size: 11rem;
             width: 11rem;
             height: 11rem;
-            // @include bor;
             display: flex;
             justify-content: center;
             align-items: center;
-            // margin: 3rem;
         }
     }
 
@@ -68,10 +62,8 @@
     .skillList-thirdRow {
         padding-right: 12rem;
         width: 100%;
-        // @include bor;
         display: flex;
         justify-content: space-between;
-        // align-items: center;
     }
     
     .skillList-firstRow,
@@ -80,22 +72,12 @@
     }
 
     .skillList-right {
-        // @include bor;
         flex: 1 0 40%;
         display: flex;
         justify-content: flex-end;
-        // align-items: flex-end;
-        // right: 0;
-        // top: 0;
-        // align-self: flex-end;
-
 
         img {
             display: block;
-            // @include bor;
-            // margin: 0 auto;
-            // margin-right: 0;
-
         }
     }
 }
@@ -107,7 +89,6 @@
 
 .skillList-left li i:hover,
 .skillList-left li img:hover {
-    // @include bor;
     scale: 1.05;
     transition: 0.4s ease;
 }
