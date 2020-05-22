@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header id="home">
     <div class="nav-wrapper">
         <div class="wrapper">
             <nav class="header--nav">
@@ -19,12 +19,12 @@
                     <button class="hire-button">Download CV</button>
                 </div>
                 <ul class="header-navig">
-                    <a class="header--nav__a" href="#">Home</a>
-                    <a class="header--nav__a" href="#">Skills</a>
-                    <a class="header--nav__a" href="#">Experience</a>
-                    <a class="header--nav__a" href="#">Education</a>
-                    <a class="header--nav__a" href="#">Projects</a>
-                    <a class="header--nav__a" href="#">Contact</a>
+                    <a class="header--nav__a" href="#home">Home</a>
+                    <a class="header--nav__a" href="#about">About</a>
+                    <a class="header--nav__a" href="#stack">Stack</a>
+                    <a class="header--nav__a" href="#">Timeline</a>
+                    <a class="header--nav__a" href="#projects">Projects</a>
+                    <a class="header--nav__a" href="#contact">Contact</a>
                 </ul>
             </nav>
         </div>
@@ -32,14 +32,12 @@
     <div class="header-content">
         <div class="wrapper">
             <div class="header-content__container">
-                <img class="decor-triangle" src="./assets/3.png" alt="triangle">
+                <img class="decor-triangle" src="./assets/3.png" alt="spinning triangle illustration">
                 <img class="decor-circle" src="./assets/1.png" alt="circle">
-                <img class="decor-dotsLeft" src="./assets/4.png" alt="dots">
-                <img class="decor-circleRight" src="./assets/5.png" alt="">
+                <img class="decor-dotsLeft" src="./assets/4.png" alt="jumping up and down dots illustration">
+                <img class="decor-circleRight" src="./assets/5.png" alt="spinning circle illustration">
 
                 <div class="container-left">
-                    <!-- <div class="decorImgs-container"> -->
-                    <!-- </div> -->
                     <div class="iAmNikita">
                         <h2 class="Iam">I Am</h2>
                         <h1 class="name">Nikita Guliaev</h1>
@@ -52,24 +50,20 @@
                     </div>
                 </div>
                 <div class="container-right">
-                    <!-- <div class="decorImgs-container"> -->
-                    <!-- </div> -->
                     <img class="nikitaImg" src="./assets/color.JPG" alt="photo of Nikita Guliaev">
                 </div>
-                <!-- <div><img src="./assets/5.png" alt="lil circle"></div>
-                <div><img src="./assets/6.png" alt="dots"></div> -->
             </div>
         </div>
     </div>
     </header>
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <h3 class="aboutMeText wrapper">I am a <span>Web Developer</span> with a strong Financial Intelligence background. Having worked for and at <span>RBC</span>, <span>Scotiabank</span> and <span>TD</span>, I’m
             bringing 4 years of banking and consulting experience. My superpower is the combo of having been on the client side
             (<span>Product</span> <span>Owner</span>, <span>Team Lead</span>) as well as having recently upgraded my skill set at <span><a class="junoLink" href="https://junocollege.com/" target="_blank"> Juno College of
             Technology</a></span>. Now I’d love to put my Tech and Finance skills to work for your company.</h3>
         </section>
-        <section class="stackSection">
+        <section class="stackSection" id="stack">
             <div class="wrapper">
                 <div class="stackSection--title">
                     <div class="redLine"></div>
@@ -85,7 +79,7 @@
                         <div class="skillList-secondRow">
                             <li><i class="fab fa-sass"></i></li>
                             <li><i class="fab fa-react"></i></li>
-                            <li><img src="./assets/jQuery.png" alt=""></li>
+                            <li><img src="./assets/jQuery.png" alt="jQuery logo"></li>
                         </div>
                         <div class="skillList-thirdRow">
                             <li><i class="fab fa-github-square"></i></li>
@@ -97,7 +91,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="wrapper">
                 <div class="projects--title">
                     <div class="redLine"></div>
@@ -109,7 +103,7 @@
                             <div class="projectBox-titles">
                                 <h2 class="projectName">Daily Budget Calculator</h2>
                                 <div class="whiteLine"></div>
-                                <h3 class="projectStack">React Firebase SCSS HTML5</h3>
+                                <h3 class="projectStack">React | Firebase | SCSS | HTML5</h3>
                                 <p class="projectBox__descript">Mob programmed with 3 other Devs using React and Firebase. This app helps users track their daily budget based on the amount of paycheck, amount of savings, number of days till next check, as well as daily expenditures. </p>
                                 <div class="projectBox__buttons">
                                     <button class="projectBox__button1"><a href="https://group-three-libraree-jamboree.github.io/project-six/"
@@ -125,7 +119,7 @@
                             <div class="projectBox-titles">
                                 <h2 class="projectName">Who Is That Pokemon?</h2>
                                 <div class="whiteLine"></div>
-                                <h3 class="projectStack">React API CSS HTML5</h3>
+                                <h3 class="projectStack">React | API | CSS | HTML5</h3>
                                 <p class="projectBox__descript">Game built with React - See if you know all 150 original Pokemon. Data is sourced from https://pokeapi.co. Enjoy!</p>
                                 <div class="projectBox__buttons">
                                     <button class="projectBox__button1"><a href="https://widespreadtruck.github.io/who-is-that-pokemon/" target="_blank">Live Link</a></button>
@@ -137,7 +131,7 @@
                             <div class="projectBox-titles">
                                 <h2 class="projectName">Who Is Coming To Class Today?</h2>
                                 <div class="whiteLine"></div>
-                                <h3 class="projectStack">JavaScript SCSS HTML5</h3>
+                                <h3 class="projectStack">JavaScript | SCSS | HTML5</h3>
                                 <p class="projectBox__descript">This app is for Trainers/Coaches who need to track how many clients are coming in for a class today. Number of attendees is
                                 limited. Errors are handled effectively.</p>
                                 <div class="projectBox__buttons">
@@ -152,7 +146,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="wrapper">
                 <div class="projects--title">
                     <div class="redLine"></div>
@@ -161,7 +155,7 @@
                 <div class="contact--container">
                     <div class="contact--container__left">
                         <div class="contact--container__triangle">
-                            <img src="./assets/10.png" alt="triangle">
+                            <img src="./assets/10.png" alt="spinning triangle">
                         </div>
                         <div><img src="./assets//exp.png" alt="an illustration of a person with a laptop"></div>
                     </div>
@@ -170,36 +164,37 @@
                         <div><a href="mailto:hello@nikitaguliaev.com">hello@nikitaguliaev.com</a></div>
                         <p>-OR-</p>
                         <form method="POST" action="https://formspree.io/xqkyejev" class="contact--formBox">
-                            <!-- <div class="contact--formBox__nameEmailBox"> -->
                                 <label for="name" aria-label="What's your name?"></label>
                                 <input
                                 placeholder="Name"
                                 name="name"
                                 type="text" id="name">
-    
                                 <label for="email" aria-label="What's your email?"></label>
                                 <input
                                 placeholder="Email"
                                 name="email"
                                 type="text" id="email">
-                            <!-- </div> -->
-                            <!-- <div class="contact--formBox__messageBox"> -->
                                 <label for="message" aria-label="What's your message?"></label>
                                 <textarea
                                 placeholder="Message"
                                 name="message"
                                 type="text" id="message"></textarea>
-
-                                <button type="submit" class="submit">Send</button>
-                            <!-- </div> -->
-                            
+                                <button type="submit" class="submit">Send</button>                            
                         </form>
                     </div>
                 </div>
         </section>
         <footer class="footer">
             <div class="wrapper">
-                
+                <div class="footer--container">
+                    <h4>Follow me on</h4>
+                    <ul class="socialLinks">
+                        <li><a href="https://twitter.com/nikita_guliaev"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="https://github.com/widespreadtruck"><i class="fab fa-github-square"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/nikita-guliaev-ma-cams-808aab8a/"><i class="fab fa-linkedin"></i></a></li>
+                    </ul> 
+                    <p>© 2020, Nikita Guliaev. All rights reserved.</p>
+                </div>
             </div>
         </footer>
     </main>

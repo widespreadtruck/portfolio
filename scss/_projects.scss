@@ -1,28 +1,21 @@
 .projects {
     min-height: 600px;
-    // height: 100vh;
     background-color: $second-bg;
     
     .wrapper {
         display: flex;
         flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        // margin-bottom: 10rem;
     }
 }
 
 .projects--container {
     margin-top: 5rem;
     margin-bottom: 10rem;
-    // @include bor;
 }
 
 .projects--title {
-    // @include bor;
     width: 100%;
     position: relative;
-    // @include bor;
     margin-top: 10rem;
 
     .redLine {
@@ -39,27 +32,22 @@
         font-family: $heading-font;
         margin: 0 auto;
         margin-bottom: 5rem;
-
     }
 }
 
 .projects--container {
     width: 100%;
-    // @include bor;
-    // height: 60rem;
     @include flexHor;
     align-items: flex-start;
 
     &__left {
         flex: 1 0 45%;
-        // @include bor;
         margin-right: 1rem;
 
     }
     
     &__right {
         flex: 1 0 45%;
-        // @include bor;
         margin-left: 1rem;
     }
 }
@@ -110,7 +98,6 @@
     left: 0;
     width: 563px;
     height: 275px;
-    // @include bor;
     @include flexVer;
     opacity: 0;
 }
@@ -138,7 +125,6 @@
 
 .projectBox__descript {
     width: 85%;
-    // @include bor;
     margin-top: 0;
     text-align: center;
 }
