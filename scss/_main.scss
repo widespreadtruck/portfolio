@@ -98,7 +98,7 @@ a {
         grid-area: header-nav;
         padding-left: 0;
         display: grid;
-        grid-template-columns: repeat(6, auto);
+        grid-template-columns: repeat(5, auto);
         
         .header--nav__a {
             justify-self: right;
@@ -262,7 +262,8 @@ a {
     line-height: 5.8rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
-
+    z-index: 1;
+    
     span {
         position: relative;
         
@@ -271,9 +272,10 @@ a {
             width: 100%;
             position: absolute;
             display: inline-block;
-            border-bottom: 1px solid red;
-            bottom: 0.5rem;
+            border-bottom: 5px solid $red;
+            bottom: 1rem;
             left: 0;
+            z-index: -1;
         }
     }
 }
