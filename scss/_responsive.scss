@@ -1,0 +1,43 @@
+.header-content__container {
+    @include media(">phone", "<=tablet") {
+
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .container-left {
+        @include media(">phone", "<=tablet") {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 12rem;
+        }
+    }
+    .container-right {
+        @include media(">phone", "<=tablet") {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+.header-navig {
+    @include media(">phone", "<=tablet") {
+    
+    display: none !important;
+    
+    }
+}
+
+.burger-menu {
+    @include media(">tablet") {
+        opacity: 0;
+    }
+}
+.burger-menu {
+    @include media(">phone", "<=tablet") {
+        opacity: 1;
+    }
+}

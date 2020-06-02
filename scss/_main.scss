@@ -20,7 +20,7 @@
     width: 15rem;
     height: 4rem;
     border-radius: 5px;
-    border: 1px solid $red;
+    border: 2px solid $red;
     background-color: transparent;
     color: white;
     font-family: $body-font;
@@ -102,8 +102,18 @@ a {
         
         .header--nav__a {
             justify-self: right;
+            position: relative;
         }
     }
+}
+
+.header--nav__a:hover:after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid $red;
+    bottom: -0.5rem;
+    left: 0rem;
+    width: 100%;
 }
 
 //styles under nav bar
@@ -126,10 +136,12 @@ a {
 
         .container-right {
             grid-area: "container-right";
+            text-align: center;
 
         }
     }
 }
+
 
 
 

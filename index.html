@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&family=Playfair+Display:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 <body>
     <header id="home">
@@ -16,7 +17,7 @@
         <div class="wrapper">
             <nav class="header--nav">
                 <div class="header-hire">
-                    <button class="hire-button"><a href="https://nikitaguliaev.com/Nikita_Guliaev_Web_Developer.pdf" download="Nikita Guliaev - Web Dev Resume">Download CV</a></button>
+                    <button class="hire-button"><a href="https://nikitaguliaev.com/Nikita_Guliaev_Web_Developer.pdf" download="Nikita Guliaev - Web Dev Resume" target="_blank">Download CV</a></button>
                 </div>
                 <ul class="header-navig">
                     <a class="header--nav__a" href="#home">Home</a>
@@ -29,6 +30,24 @@
             </nav>
         </div>
     </div>
+
+<!-- burger menu STARTS-->
+<div class="burger-menu">
+    <a href="#" class="burger-menu__button">
+        <span class="burger-menu__lines"></span>
+    </a>
+
+    <nav class="burger-menu__nav">
+        <a href="#home" class="burger-menu__link">Home</a>
+        <a href="#about" class="burger-menu__link">About</a>
+        <a href="#stack" class="burger-menu__link">Stack</a>
+        <a href="#projects" class="burger-menu__link">Projects</a>
+        <a href="#contact" class="burger-menu__link">Contact</a>
+    </nav>
+    <div class="burger-menu__overlay"></div>
+</div>
+<!-- burger menu ENDS-->
+
     <div class="header-content">
         <div class="wrapper">
             <div class="header-content__container">
@@ -72,7 +91,7 @@
                 <div class="stackSection--container">
                     <ul class="skillList-left">
                         <div class="skillList-firstRow">
-                            <li><img src="./assets//skillz/1.png" alt="react logo" aria-label="react logo"><h4>React</h4></li>
+                            <li><img src="./assets//skillz/1.png" alt="react logo" aria-label="react logo"></li>
                             <li><img src="./assets//skillz/2.png" alt="react logo" aria-label="react logo"></li>
                             <li><img src="./assets//skillz/3.png" alt="react logo" aria-label="react logo"></li>
                         </div>
@@ -203,5 +222,8 @@
             </div>
         </footer>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
