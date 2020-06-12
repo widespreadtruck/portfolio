@@ -1,0 +1,117 @@
+.mobileProjects {
+    min-height: 600px;
+    background-color: $second-bg;
+    
+    .wrapper {
+        @include flexVer;
+        width: $wrapper-width;
+        // width: 82%;
+        margin: 0 auto;
+        max-width: 1080px;
+    }
+}
+
+.mobileProjects--title {
+    width: 100%;
+    position: relative;
+    margin-top: 5rem;
+
+    .redLine {
+        position: absolute;
+        width: 5rem;
+        border-bottom: 3px solid $red;
+        top: 0rem;
+        left: calc((100% - 5rem) / 2);
+
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 6rem;
+        font-family: $heading-font;
+        margin: 0 auto;
+        margin: 1rem 0 5rem 0;
+        
+        @include media("<tablet"){            
+            font-size: 3.5rem;
+        }
+    }
+}
+
+.mobileProjects--containerForAll {
+    @include flexVer;
+    width: 100%;
+}
+
+.mobileProjects--projectBox {
+    // min-width: 250px;
+    max-width: 900px;
+    margin-bottom: 8rem;
+
+    &__imageBox {
+        margin: 0 auto;
+        @include flexHor;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__projectName h3 {
+        text-align: center;
+    }
+
+    &__description {
+        text-align: center;
+        
+        font-size: calc(1.6rem + 0.5vw);
+    }
+
+    &__stack {
+        @include flexHor;
+        margin-bottom: 2rem;
+    }
+
+    &__buttons {
+        @include flexHor;
+
+        a:first-child {
+            margin-right: 2rem;
+        }
+        a {
+            display: inline-block;
+            max-width: 15rem;
+            height: 4rem;
+            border-radius: 5px;
+            border: 2px solid $red;
+            background-color: transparent;
+            color: white;
+            font-family: $body-font;
+            @include flexHor;
+            flex: 1 2 auto;
+        }
+        a:hover {
+            background-color: $red;
+        }
+    }
+}
+
+.mobileProjects--projectBox__stack img {
+    display: block;
+    max-width: 8rem;
+    width: 100%;
+    margin: 0 0.5rem;
+    flex: 1 2 auto;
+
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    
+    @include media(">tablet") {
+        margin: 0rem 2rem;
+    }
+}

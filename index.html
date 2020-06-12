@@ -13,67 +13,67 @@
 </head>
 <body>
     <header id="home">
-    <div class="nav-wrapper">
-        <div class="wrapper">
-            <nav class="header--nav">
-                <div class="header-hire">
-                    <button class="hire-button"><a href="https://nikitaguliaev.com/Nikita_Guliaev_Web_Developer.pdf" download="Nikita Guliaev - Web Dev Resume" target="_blank">Download CV</a></button>
-                </div>
-                <ul class="header-navig">
-                    <a class="header--nav__a" href="#home">Home</a>
-                    <a class="header--nav__a" href="#about">About</a>
-                    <a class="header--nav__a" href="#stack">Stack</a>
-                    <!-- <a class="header--nav__a" href="#">Timeline</a> -->
-                    <a class="header--nav__a" href="#projects">Projects</a>
-                    <a class="header--nav__a" href="#contact">Contact</a>
-                </ul>
+        <!-- burger menu STARTS-->
+        <div class="burger-menu">
+            <a href="#" class="burger-menu__button">
+                <span class="burger-menu__lines"></span>
+            </a>
+
+            <nav class="burger-menu__nav">
+                <a href="#home" class="burger-menu__link">Home</a>
+                <a href="#about" class="burger-menu__link">About</a>
+                <a href="#stack" class="burger-menu__link">Stack</a>
+                <a href="#projects" class="burger-menu__link">Projects</a>
+                <a href="#contact" class="burger-menu__link">Contact</a>
             </nav>
+            <div class="burger-menu__overlay"></div>
         </div>
-    </div>
-
-<!-- burger menu STARTS-->
-<div class="burger-menu">
-    <a href="#" class="burger-menu__button">
-        <span class="burger-menu__lines"></span>
-    </a>
-
-    <nav class="burger-menu__nav">
-        <a href="#home" class="burger-menu__link">Home</a>
-        <a href="#about" class="burger-menu__link">About</a>
-        <a href="#stack" class="burger-menu__link">Stack</a>
-        <a href="#projects" class="burger-menu__link">Projects</a>
-        <a href="#contact" class="burger-menu__link">Contact</a>
-    </nav>
-    <div class="burger-menu__overlay"></div>
-</div>
-<!-- burger menu ENDS-->
-
-    <div class="header-content">
-        <div class="wrapper">
-            <div class="header-content__container">
-                <img class="decor-triangle" src="./assets/3.png" alt="spinning triangle illustration">
-                <img class="decor-circle" src="./assets/1.png" alt="circle">
-                <img class="decor-dotsLeft" src="./assets/4.png" alt="jumping up and down dots illustration">
-                <img class="decor-circleRight" src="./assets/5.png" alt="spinning circle illustration">
-
-                <div class="container-left">
-                    <div class="iAmNikita">
-                        <h2 class="Iam">I Am</h2>
-                        <h1 class="name">Nikita Guliaev</h1>
-                        <h3 class="frontEnd">Front-End Web Developer</h3>
-                        <ul class="socialLinks">
-                            <li><a href="https://twitter.com/nikita_guliaev"><i class="fab fa-twitter-square"></i></a></li>
-                            <li><a href="https://github.com/widespreadtruck"><i class="fab fa-github-square"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/nikita-guliaev-ma-cams-808aab8a/"><i class="fab fa-linkedin"></i></a></li>
-                        </ul>
+        <!-- burger menu ENDS-->
+        <div class="nav-wrapper">
+            <div class="wrapper">
+                <nav class="header--nav">
+                    <div class="header-hire">
+                        <button class="hire-button"><a href="https://nikitaguliaev.com/Nikita_Guliaev_Web_Developer.pdf" download="Nikita Guliaev - Web Dev Resume" target="_blank">Download CV</a></button>
                     </div>
-                </div>
-                <div class="container-right">
-                    <img class="nikitaImg" src="./assets/color.JPG" alt="photo of Nikita Guliaev">
+                    <ul class="header-navig">
+                        <a class="header--nav__a" href="#home">Home</a>
+                        <a class="header--nav__a" href="#about">About</a>
+                        <a class="header--nav__a" href="#stack">Stack</a>
+                        <!-- <a class="header--nav__a" href="#">Timeline</a> -->
+                        <a class="header--nav__a" href="#projects">Projects</a>
+                        <a class="header--nav__a" href="#contact">Contact</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="header-content">
+            <div class="wrapper">
+                <div class="header-content__container">
+                    <img class="decor-triangle" src="./assets/3.png" alt="spinning triangle illustration">
+                    <img class="decor-circle" src="./assets/1.png" alt="circle">
+                    <img class="decor-dotsLeft" src="./assets/4.png" alt="jumping up and down dots illustration">
+                    <img class="decor-circleRight" src="./assets/5.png" alt="spinning circle illustration">
+
+                    <div class="container-left">
+                        <div class="iAmNikita">
+                            <h2 class="Iam">I Am</h2>
+                            <h1 class="name">Nikita Guliaev</h1>
+                            <h3 class="frontEnd">Front-End Web Developer</h3>
+                            <ul class="socialLinks">
+                                <li><a href="https://twitter.com/nikita_guliaev"><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a href="https://github.com/widespreadtruck"><i class="fab fa-github-square"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/nikita-guliaev-ma-cams-808aab8a/"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container-right">
+                        <img class="nikitaImg" src="./assets/color.JPG" alt="photo of Nikita Guliaev">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </header>
     <main>
         <section class="about" id="about">
@@ -115,7 +115,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects" id="projects">
+        <!-- <section class="projects" id="projects">
             <div class="wrapper">
                 <div class="projects--title">
                     <div class="redLine"></div>
@@ -169,7 +169,79 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+
+        <section class="mobileProjects">
+            <div class="wrapper">
+                <div class="mobileProjects--title">
+                    <div class="redLine"></div>
+                    <h2>My Projects</h2>
+                </div>
+
+                <div class="mobileProjects--containerForAll">
+                    <div class="mobileProjects--projectBox project1">
+                        <div class="mobileProjects--projectBox__imageBox"><img src="./assets//projects/laptop.png" alt="image of the project on a laptop screen"></div>
+                        <div class="mobileProjects--projectBox__projectName"><h3>Daily Budget Calculator</h3></div>
+                        <div class="mobileProjects--projectBox__description">
+                            <p>Mob programmed with 3 other Devs using React and Firebase. This app helps users track their daily budget based on the
+                            amount of paycheck, amount of savings, number of days till next check, as well as daily expenditures.</p>
+                            <h4>Stack used:</h4>
+                        </div>
+                        <div class="mobileProjects--projectBox__stack">
+                            <img src="./assets//skillz/1.png" alt="stack item">
+                            <img src="./assets//skillz/3.png" alt="stack item">
+                            <img src="./assets//skillz/8.png" alt="stack item">
+                            <img src="./assets//skillz/9.png" alt="stack item">
+                            <img src="./assets//skillz/7.png" alt="stack item">
+                        </div>
+                        <div class="mobileProjects--projectBox__buttons">
+                            <a href="https://group-three-libraree-jamboree.github.io/project-six/"
+                            target="_blank">Live Link</a>
+                            <a href="https://github.com/Group-Three-Libraree-Jamboree/project-six"
+                            target="_blank">GitHub</a></div>
+                    </div>
+                    <div class="mobileProjects--projectBox project2">
+                        <div class="mobileProjects--projectBox__imageBox"><img src="./assets//projects/laptop.png" alt="image of the project on a laptop screen"></div>
+                        <div class="mobileProjects--projectBox__projectName"><h3>Who Is That Pokemon?</h3></div>
+                        <div class="mobileProjects--projectBox__description">
+                            <p>Game built with React - See if you know all 150 original Pokemon. Data is sourced from https://pokeapi.co. Enjoy!</p>
+                            <h4>Stack used:</h4>
+                        </div>
+                        <div class="mobileProjects--projectBox__stack">
+                            <img src="./assets//skillz/1.png" alt="stack item">
+                            <img src="./assets//skillz/9.png" alt="stack item">
+                            <img src="./assets//skillz/10.png" alt="stack item">
+                            <img src="./assets//skillz/12.png" alt="stack item">
+                            <img src="./assets//skillz/7.png" alt="stack item">
+                        </div>
+                        <div class="mobileProjects--projectBox__buttons">
+                            <a href="https://widespreadtruck.github.io/who-is-that-pokemon/" target="_blank">Live Link</a>
+                            <a href="https://github.com/widespreadtruck/who-is-that-pokemon" target="_blank">GitHub</a></div>
+                    </div>
+                    <div class="mobileProjects--projectBox project3">
+                        <div class="mobileProjects--projectBox__imageBox"><img src="./assets//projects/laptop.png" alt="image of the project on a laptop screen"></div>
+                        <div class="mobileProjects--projectBox__projectName"><h3>Who Is Coming To Class Today?</h3></div>
+                        <div class="mobileProjects--projectBox__description">
+                            <p>This app is for Trainers/Coaches who need to track how many clients are coming in for a class today. Number of attendees is limited. Errors are handled effectively.</p>
+                            <h4>Stack used:</h4>
+                        </div>
+                        <div class="mobileProjects--projectBox__stack">
+                            <img src="./assets//skillz/2.png" alt="stack item">
+                            <img src="./assets//skillz/9.png" alt="stack item">
+                            <img src="./assets//skillz/10.png" alt="stack item">
+                            <img src="./assets//skillz/4.png" alt="stack item">
+                            <img src="./assets//skillz/7.png" alt="stack item">
+                        </div>
+                        <div class="mobileProjects--projectBox__buttons">
+                            <a href="https://widespreadtruck.github.io/nikitaGuliaevProjectThree/"
+                            target="_blank">Live Link</a>
+                            <a href="https://github.com/widespreadtruck/nikitaGuliaevProjectThree"
+                            target="_blank">GitHub</a></div>                        
+                    </div>
+                </div>
+            </div>
         </section>
+
         <section class="contact" id="contact">
             <div class="wrapper">
                 <div class="projects--title">
@@ -184,7 +256,7 @@
                         <div><img src="./assets//exp.png" alt="an illustration of a person with a laptop"></div>
                     </div>
                     <div class="contact--container__right">
-                        <h3>Have a project? Get in touch!</h3>
+                        <h3>Have a project? <br> Get in touch!</h3>
                         <div><a href="mailto:hello@nikitaguliaev.com">hello@nikitaguliaev.com</a></div>
                         <p>-OR-</p>
                         <form method="POST" action="https://formspree.io/xqkyejev" class="contact--formBox">
