@@ -38,6 +38,10 @@
     width: 100%;
     margin-bottom: 10rem;
 
+    @include media(">phone", "<=tablet") {
+        flex-direction: column;
+    }
+
     .skillList-left {
         list-style: none;
         display: flex;
@@ -47,6 +51,13 @@
         flex: 1 0 60%;
         padding: 0;
 
+        @include media(">phone", "<=tablet") {
+            // justify-content: space-between;
+            // align-items: flex-start;
+            // flex: 1 0 100% !important;
+            width: 100%;
+        }
+
         li {
             font-size: 11rem;
             width: 11rem;
@@ -55,6 +66,7 @@
             justify-content: center;
             align-items: center;
         }
+
     }
 
     .skillList-firstRow,
@@ -65,12 +77,20 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+
+        @include media(">phone", "<=tablet") {
+            padding: 0;
+        }
     }
     
     .skillList-firstRow,
     .skillList-secondRow,
     .skillList-thirdRow {
         margin-bottom: 3rem;
+
+        @include media(">phone", "<=tablet") {
+            margin-bottom: 5rem;
+        }
     }
 
     .skillList-right {
@@ -80,6 +100,10 @@
 
         img {
             display: block;
+        }
+
+        @include media(">phone", "<=tablet") {
+            display: none;
         }
     }
 }
