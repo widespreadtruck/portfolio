@@ -10,15 +10,46 @@
             font-size: 2.4rem;
             margin-bottom: 0rem;
             margin-top: 10rem;
+
+            @include media(">phone", "<=tablet") {
+                margin-top: 5rem;
+            }
+        }
+
+        .footer-mobileLinks {
+            @include flexVer;
+            // text-align: center;
+            // align-items: flex-start;
+            padding-left: 0;
+            padding-right: 0;
+            
+            @include media(">tablet") {
+                display: none;
+            }
+            
+            a {
+                margin-bottom: 2rem;
+            }
         }
 
         .socialLinks {
             margin: 3rem auto;
+
+            @include media(">phone", "<=tablet") {
+                display: none;
+            }
         }
 
         p {
             margin-top: 0;
             margin-bottom: 10rem;
+
+            @include media(">phone", "<=tablet") {
+                // font-size: 2rem;
+                width: 18rem;
+                text-align: center;
+                margin-bottom: 5rem;
+            }
         }
     }
 }
