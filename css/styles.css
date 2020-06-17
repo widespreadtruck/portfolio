@@ -690,17 +690,31 @@ a {
     width: 100%; } }
     .stackSection--container .skillList-left li {
       font-size: 11rem;
-      width: 11rem;
-      height: 11rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 33%;
+      flex: 1 0 33%; }
+    .stackSection--container .skillList-left li p {
+      font-size: 3rem;
+      margin: 0 auto;
+      margin-top: 1rem;
+      text-align: center; }
+
+@media (min-width: 321px) and (max-width: 978px) {
+  .stackSection--container .skillList-left li p {
+    font-size: 2rem; } }
   .stackSection--container .skillList-firstRow,
   .stackSection--container .skillList-secondRow,
   .stackSection--container .skillList-thirdRow,
@@ -719,11 +733,13 @@ a {
   .stackSection--container .skillList-secondRow,
   .stackSection--container .skillList-thirdRow,
   .stackSection--container .skillList-fourthRow {
-    padding: 0; } }
+    padding: 0;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; } }
   .stackSection--container .skillList-firstRow,
   .stackSection--container .skillList-secondRow,
   .stackSection--container .skillList-thirdRow {
-    margin-bottom: 3rem; }
+    margin-bottom: 5rem; }
 
 @media (min-width: 321px) and (max-width: 978px) {
   .stackSection--container .skillList-firstRow,
@@ -749,7 +765,14 @@ a {
 
 .skillList-left li img {
   width: 100%;
-  display: block; }
+  display: block;
+  width: 13rem;
+  height: 13rem; }
+
+@media (min-width: 321px) and (max-width: 978px) {
+  .skillList-left li img {
+    width: 8rem;
+    height: 8rem; } }
 
 .skillList-left li i:hover,
 .skillList-left li img:hover {
@@ -1341,11 +1364,46 @@ a {
       font-size: 2.4rem;
       margin-bottom: 0rem;
       margin-top: 10rem; }
+
+@media (min-width: 321px) and (max-width: 978px) {
+  .footer .footer--container h4 {
+    margin-top: 5rem; } }
+    .footer .footer--container .footer-mobileLinks {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding-left: 0;
+      padding-right: 0; }
+      @media (min-width: 979px) {
+        .footer .footer--container .footer-mobileLinks {
+          display: none; } }
+      .footer .footer--container .footer-mobileLinks a {
+        margin-bottom: 2rem; }
     .footer .footer--container .socialLinks {
       margin: 3rem auto; }
+
+@media (min-width: 321px) and (max-width: 978px) {
+  .footer .footer--container .socialLinks {
+    display: none; } }
     .footer .footer--container p {
       margin-top: 0;
       margin-bottom: 10rem; }
+
+@media (min-width: 321px) and (max-width: 978px) {
+  .footer .footer--container p {
+    width: 18rem;
+    text-align: center;
+    margin-bottom: 5rem; } }
 
 .socialLinks li {
   margin: 0 2rem; }
