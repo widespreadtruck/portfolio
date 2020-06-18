@@ -333,7 +333,7 @@ a {
   width: 15rem;
   height: 4rem;
   border-radius: 5px;
-  border: 2px solid #e51d46;
+  border: 1px solid #e51d46;
   background-color: transparent;
   color: white;
   font-family: "Nunito Sans", sans-serif; }
@@ -372,20 +372,11 @@ a {
     padding-left: 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[5];
-    grid-template-columns: repeat(5, auto); }
+    -ms-grid-columns: (auto)[6];
+    grid-template-columns: repeat(6, auto); }
     .header--nav .header-navig .header--nav__a {
       -ms-grid-column-align: right;
-      justify-self: right;
-      position: relative; }
-
-.header--nav__a:hover:after {
-  position: absolute;
-  content: "";
-  border-bottom: 2px solid #e51d46;
-  bottom: -0.5rem;
-  left: 0rem;
-  width: 100%; }
+      justify-self: right; }
 
 .header-content {
   z-index: -1;
@@ -402,8 +393,7 @@ a {
       grid-area: "container-left";
       height: 100%; }
     .header-content .header-content__container .container-right {
-      grid-area: "container-right";
-      text-align: center; }
+      grid-area: "container-right"; }
 
 .container-right .nikitaImg {
   display: block;
@@ -418,8 +408,8 @@ a {
   z-index: 1; }
 
 .decor-triangle {
-  top: 13rem;
-  left: 40px;
+  top: 0;
+  left: 0;
   width: 3rem;
   -webkit-animation: spin 15s linear infinite;
   animation: spin 15s linear infinite; }
@@ -435,41 +425,37 @@ a {
     transform: rotate(360deg); } }
 
 .decor-circle {
-  top: 26vh;
-  left: 40px;
+  top: 0rem;
+  left: 0rem;
   width: 290px;
-  z-index: 2; }
+  z-index: -1; }
 
 .decor-dotsLeft {
-  bottom: 10vh;
-  left: 40px;
+  bottom: -16vh;
+  left: 0;
   -webkit-animation: jump 3s ease-in-out infinite;
   animation: jump 3s ease-in-out infinite; }
 
 @-webkit-keyframes jump {
   0% {
-    bottom: 10vh; }
+    bottom: -16vh; }
   50% {
-    bottom: 12vh; }
+    bottom: -12vh; }
   100% {
-    bottom: 10vh; } }
+    bottom: -16vh; } }
 
 @keyframes jump {
   0% {
-    bottom: 10vh; }
+    bottom: -16vh; }
   50% {
-    bottom: 12vh; }
+    bottom: -12vh; }
   100% {
-    bottom: 10vh; } }
-
-@media (min-width: 321px) and (max-width: 978px) {
-  .decor-dotsLeft {
-    left: 30rem !important; } }
+    bottom: -16vh; } }
 
 .decor-circleRight {
   position: absolute;
-  top: 24rem;
-  right: 7rem;
+  bottom: -5rem;
+  right: 2rem;
   width: 4rem;
   -webkit-animation: spin 10s linear infinite;
   animation: spin 10s linear infinite; }
@@ -550,13 +536,7 @@ a {
   font-size: 3.6rem;
   line-height: 5.8rem;
   margin-top: 5rem;
-  margin-bottom: 5rem;
-  z-index: 1; }
-
-@media (min-width: 321px) and (max-width: 978px) {
-  .aboutMeText.wrapper {
-    font-size: 2.6rem;
-    line-height: 3.8rem; } }
+  margin-bottom: 5rem; }
   .aboutMeText.wrapper span {
     position: relative; }
     .aboutMeText.wrapper span::after {
@@ -564,10 +544,9 @@ a {
       width: 100%;
       position: absolute;
       display: inline-block;
-      border-bottom: 5px solid #e51d46;
-      bottom: 1rem;
-      left: 0;
-      z-index: -1; }
+      border-bottom: 1px solid red;
+      bottom: 0.5rem;
+      left: 0; }
 
 .junoLink {
   text-decoration: none; }
@@ -609,6 +588,10 @@ a {
     -ms-flex-align: center;
     align-items: center; } }
 
+@media (min-width: 321px) and (max-width: 978px) {
+  .header-navig {
+    display: none !important; } }
+
 .stackSection {
   min-height: 600px; }
   .stackSection .wrapper {
@@ -629,6 +612,14 @@ a {
 .stackSection--title {
   position: relative;
   margin-top: 10rem; }
+
+@media (min-width: 321px) and (max-width: 978px) {
+  .stackSection--title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 8rem; } }
   .stackSection--title .redLine {
     position: absolute;
     width: 5rem;
@@ -664,7 +655,8 @@ a {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column;
+    margin-bottom: 5rem; } }
   .stackSection--container .skillList-left {
     list-style: none;
     display: -webkit-box;
@@ -970,7 +962,7 @@ a {
   width: 15rem;
   height: 4rem;
   border-radius: 5px;
-  border: 2px solid #e51d46;
+  border: 1px solid #e51d46;
   background-color: transparent;
   color: white;
   font-family: "Nunito Sans", sans-serif;
@@ -1330,7 +1322,7 @@ a {
   width: 15rem;
   height: 4rem;
   border-radius: 5px;
-  border: 2px solid #e51d46;
+  border: 1px solid #e51d46;
   background-color: transparent;
   color: white;
   font-family: "Nunito Sans", sans-serif;

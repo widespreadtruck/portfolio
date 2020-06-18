@@ -13,6 +13,11 @@
     position: relative;
     margin-top: 10rem;
 
+    @include media(">phone", "<=tablet") {
+        flex-direction: column;
+        margin-top: 8rem;
+    }
+
     .redLine {
         position: absolute;
         width: 5rem;
@@ -40,6 +45,7 @@
 
     @include media(">phone", "<=tablet") {
         flex-direction: column;
+        margin-bottom: 5rem;
     }
 
     .skillList-left {
