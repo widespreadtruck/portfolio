@@ -21,7 +21,6 @@
     .redLine {
         position: absolute;
         width: 5rem;
-        text-align: center;
         border-bottom: 3px solid $red;
         top: 0rem;
         left: calc((100% - 5rem) / 2);
@@ -32,6 +31,12 @@
         font-family: $heading-font;
         margin: 0 auto;
         margin-bottom: 5rem;
+        margin-top: 1rem;
+
+        @include media(">phone", "<=tablet") {
+            font-size: 4rem;
+            margin-bottom: 2.5rem;
+        }
     }
 }
 
