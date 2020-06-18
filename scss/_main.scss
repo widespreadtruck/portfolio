@@ -20,7 +20,7 @@
     width: 15rem;
     height: 4rem;
     border-radius: 5px;
-    border: 2px solid $red;
+    border: 1px solid $red;
     background-color: transparent;
     color: white;
     font-family: $body-font;
@@ -79,11 +79,6 @@ a {
     height: 15vh;
     top: 0px;
     z-index: 10;
-
-    // @include media(">phone", "<=tablet") {
-    //     display: none;
-    // }
-
 }
 
 .header--nav {
@@ -103,27 +98,12 @@ a {
         grid-area: header-nav;
         padding-left: 0;
         display: grid;
-        grid-template-columns: repeat(5, auto);
+        grid-template-columns: repeat(6, auto);
         
         .header--nav__a {
             justify-self: right;
-            position: relative;
         }
     }
-
-    // @include media(">phone", "<=tablet") {
-    //     display: none;
-    // }
-
-}
-
-.header--nav__a:hover:after {
-    position: absolute;
-    content: "";
-    border-bottom: 2px solid $red;
-    bottom: -0.5rem;
-    left: 0rem;
-    width: 100%;
 }
 
 //styles under nav bar
@@ -146,12 +126,10 @@ a {
 
         .container-right {
             grid-area: "container-right";
-            text-align: center;
 
         }
     }
 }
-
 
 
 
@@ -171,8 +149,10 @@ a {
 }
 
 .decor-triangle {
-    top: 13rem;
-    left: 40px;
+    top: 0;
+    left: 0;
+    // top: 13rem;
+    // left: 40px;
     width: 3rem;
     animation: spin 15s linear infinite;
     @keyframes spin {
@@ -183,35 +163,33 @@ a {
 }
 
 .decor-circle {
-    top: 26vh;
-    left: 40px;
+    top: 0rem;
+    left: 0rem;
+    // top: 26vh;
+    // left: 40px;
     width: 290px;
-    z-index: 2;
+    z-index: -1;
 }
 .decor-dotsLeft {
-    bottom: 10vh;
-    left: 40px;
+    bottom: -16vh;
+    left: 0;
     animation: jump 3s ease-in-out infinite;
     @keyframes jump {
         0% {
-            bottom: 10vh;
+            bottom: -16vh;
         }
         50% {
-            bottom: 12vh;
+            bottom: -12vh;
         }
         100% {
-            bottom: 10vh
+            bottom: -16vh
         }
-    }
-
-    @include media(">phone", "<=tablet") {
-        left: 30rem !important;
     }
 }
 .decor-circleRight {
     position: absolute;
-    top: 24rem;
-    right: 7rem;
+    bottom: -5rem;
+    right: 2rem;
     width: 4rem;
     animation: spin 10s linear infinite;
     spin {
@@ -288,13 +266,7 @@ a {
     line-height: 5.8rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    z-index: 1;
 
-    @include media(">phone", "<=tablet") {
-        font-size: 2.6rem;
-        line-height: 3.8rem;
-    }
-    
     span {
         position: relative;
         
@@ -303,10 +275,9 @@ a {
             width: 100%;
             position: absolute;
             display: inline-block;
-            border-bottom: 5px solid $red;
-            bottom: 1rem;
+            border-bottom: 1px solid red;
+            bottom: 0.5rem;
             left: 0;
-            z-index: -1;
         }
     }
 }
@@ -320,8 +291,6 @@ a {
 }
 
 
-
-// responsive styles
 .header-content__container {
     @include media(">phone", "<=tablet") {
 
@@ -347,3 +316,8 @@ a {
 }
 
 
+.header-navig {
+    @include media(">phone", "<=tablet") {
+        display: none !important;
+    }
+}
