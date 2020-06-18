@@ -20,7 +20,7 @@
     width: 15rem;
     height: 4rem;
     border-radius: 5px;
-    border: 1px solid $red;
+    border: 2px solid $red;
     background-color: transparent;
     color: white;
     font-family: $body-font;
@@ -137,7 +137,11 @@ a {
     display: block;
     width: 540px;
     border-radius: 5px;
+
+    @include media(">=phone", "<=tablet") {
+        width: 100%;
     }
+}
 
 //I am Nikita styles
 .decor-triangle,
@@ -163,12 +167,19 @@ a {
 }
 
 .decor-circle {
-    top: 0rem;
+    top: 10rem;
     left: 0rem;
     // top: 26vh;
     // left: 40px;
     width: 290px;
     z-index: -1;
+
+    @include media(">phone", "<=tablet") {
+        top: 12vh;
+        left: calc((100% - 250px) / 2);
+        width: 250px;
+    }
+
 }
 .decor-dotsLeft {
     bottom: -16vh;
@@ -176,16 +187,56 @@ a {
     animation: jump 3s ease-in-out infinite;
     @keyframes jump {
         0% {
-            bottom: -16vh;
+            bottom: -18vh;
         }
         50% {
-            bottom: -12vh;
+            bottom: -14vh;
         }
         100% {
-            bottom: -16vh
+            bottom: -18vh
         }
     }
+
+
+
+
+    @include media(">phone", "<=tablet") {
+        bottom: -14vh;
+        left: 0;
+        animation: jump 3s ease-in-out infinite;
+        @keyframes jump {
+            0% {
+                bottom: -14vh;
+            }
+            50% {
+                bottom: -10vh;
+            }
+            100% {
+                bottom: -14vh
+            }
+        }
+    }
+
+
+    @include media(">=tablet") {
+        bottom: -16vh !important;
+        left: 0 !important;
+        @keyframes jump {
+            0% {
+                bottom: -16vh !important;
+            }
+            50% {
+                bottom: -12vh !important;
+            }
+            100% {
+                bottom: -16vh !important;
+            }
+        }
+    }
+
 }
+
+
 .decor-circleRight {
     position: absolute;
     bottom: -5rem;
@@ -205,6 +256,10 @@ a {
     position: relative;
     padding-top: 9rem;
 
+    @include media(">phone", "<=tablet") {
+        align-items: center;
+    }
+
     .Iam {
         font-size: 110px;
         font-weight: 700;
@@ -222,6 +277,10 @@ a {
         margin-top: 0;
         margin-bottom: 2rem;
         letter-spacing: 5px;
+
+    @include media(">phone", "<=tablet") {
+        text-align: center;
+    }
     }
 
     .frontEnd {
@@ -239,6 +298,10 @@ a {
     margin-top: 6rem;
     margin-bottom: 0;
     padding: 0 0 0 0;
+
+    @include media(">phone", "<=tablet") {
+        margin-top: 4rem;
+    }
     
     li {
         margin-right: 4rem;
@@ -251,42 +314,16 @@ a {
     }
 }
 
-
-// About section
-.about {
-    background-color: $second-bg;
-    min-height: 600px;
-    @include flexHor;
-}   
-
-.aboutMeText.wrapper{
-    margin: 0;
-    padding: 0;
-    font-size: 3.6rem;
-    line-height: 5.8rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-
-    span {
-        position: relative;
-        
-        &::after {
-            content: "";
-            width: 100%;
-            position: absolute;
-            display: inline-block;
-            border-bottom: 1px solid red;
-            bottom: 0.5rem;
-            left: 0;
-        }
+.iAmNikita .socialLinks li {
+    @include media(">phone", "<=tablet") {
+        margin-right: 2rem;
     }
-}
 
-.junoLink {
-    text-decoration: none;
+    a {
 
-    &:visited {
-        color: white;
+        @include media(">phone", "<=tablet") {
+            font-size: 3.3rem;
+        }
     }
 }
 
@@ -321,3 +358,4 @@ a {
         display: none !important;
     }
 }
+
