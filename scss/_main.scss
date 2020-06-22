@@ -69,6 +69,10 @@ a {
     &:hover {
         background-color: $red;
     } 
+
+    @include media(">=phone", "<=tablet") {
+        margin-top: -2rem;
+    }
 }
 
 // nav bar styles
@@ -79,6 +83,20 @@ a {
     height: 15vh;
     top: 0px;
     z-index: 10;
+}
+
+
+@include media(">=phone", "<=tablet") {
+    .nav-wrapper {
+        height: 8rem;
+    }
+    .header--nav {
+        height: 8rem;
+    }
+
+    .header-content {
+        margin-top: 8rem;
+    }
 }
 
 .header--nav {
@@ -153,8 +171,8 @@ a {
 }
 
 .decor-triangle {
-    top: 0;
-    left: 0;
+    top: 1rem;
+    left: 2rem;
     // top: 13rem;
     // left: 40px;
     width: 3rem;
