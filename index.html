@@ -41,7 +41,7 @@
             <div class="wrapper">
                 <nav class="header--nav">
                     <div class="header-hire">
-                        <button tabindex="0" class="hire-button"><a href="https://nikitaguliaev.com/Nikita_Guliaev_Web_Developer.pdf" download="Nikita Guliaev - Web Dev Resume" target="_blank">Download CV</a></button>
+                        <button tabindex="0" class="hire-button"><a href="https://nikitaguliaev.com/Nikita_Guliaev_Web_Developer.pdf" download="Nikita Guliaev - Web Dev Resume" target="_blank" rel="noopener">Download CV</a></button>
                     </div>
                     <ul class="header-navig">
                         <a tabindex="0" class="header--nav__a" href="#home">Home</a>
@@ -75,9 +75,9 @@
                             <!-- JS typed text goes here -->
                             <h3 tabindex="0" class="frontEnd" id="typed"></h3>
                             <ul tabindex="0" class="socialLinks">
-                                <li><a href="https://twitter.com/nikita_guliaev"><i class="fab fa-twitter-square"></i></a></li>
-                                <li><a href="https://github.com/widespreadtruck"><i class="fab fa-github-square"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/nikita-guliaev-ma-cams-808aab8a/"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a target="_blank" rel="noopener" href="https://twitter.com/nikita_guliaev"><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a target="_blank" rel="noopener" href="https://github.com/widespreadtruck"><i class="fab fa-github-square"></i></a></li>
+                                <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/nikita-guliaev-ma-808aab8a/"><i class="fab fa-linkedin"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -89,13 +89,13 @@
         </div>
     </header>
     <main>
-        <section class="about" id="about" data-aos="fade-up" data-aos-easing="ease-in-out">
+        <section class="about" id="about">
             <div class="about--title">
-                <div class="redLine"></div>
-                <h2 tabindex="0">About</h2>
-                <img class="decor-circleRight" src="./assets/5.png" alt="spinning circle illustration">
+                <div data-aos="fade-up" data-aos-easing="ease-in-out" class="redLine"></div>
+                <h2 data-aos="fade-up" data-aos-easing="ease-in-out" tabindex="0">About</h2>
+                <img data-aos="fade-left" class="decor-circleRight" src="./assets/5.png" alt="spinning circle illustration">
             </div>
-            <h3 tabindex="0" class="aboutMeText wrapper">I am a <span class="underline">Web Developer</span> with a strong Financial Intelligence background. Having worked for and at <span class="rbc">RBC</span>, <span class="bns">Scotiabank</span> and <span class="td">TD</span>, I’m
+            <h3 data-aos="fade-up" tabindex="0" class="aboutMeText wrapper">I am a <span class="underline">Web Developer</span> with a strong Financial Intelligence background. Having worked for and at <span class="rbc">RBC</span>, <span class="bns">Scotiabank</span> and <span class="td">TD</span>, I’m
             bringing 4 years of banking and consulting experience. My superpower is the combo of having been on the client side of a large project
             (<span class="underline">Product</span> <span class="underline">Owner</span>, <span class="underline">Team Lead</span>) as well as having recently upgraded my skill set at <span><a class="junoLink" href="https://junocollege.com/" target="_blank"> Juno College of
             Technology</a></span>. Now I’d love to put my Tech and Finance skills to work for your company.</h3>
@@ -255,21 +255,25 @@
                     </div>
                     <div class="contact--container__right">
                         <h3 tabindex="0">Have a project? <br> Get in touch!</h3>
-                        <div data-aos="fade-right" tabindex="0"><a href="mailto:hello@nikitaguliaev.com">hello@nikitaguliaev.com</a></div>
+                        <div data-aos="fade-left" tabindex="0"><a href="mailto:hello@nikitaguliaev.com">hello@nikitaguliaev.com</a></div>
                         <p>-OR-</p>
-                        <form data-aos="fade-left" method="POST" action="https://formspree.io/xqkyejev" class="contact--formBox">
+                        <form method="POST" action="https://formspree.io/xqkyejev" class="contact--formBox">
                                 <label tabindex="0" for="name" aria-label="What's your name?"></label>
                                 <input
+                                data-aos="fade-left"
                                 placeholder="Name"
                                 name="name"
                                 type="text" id="name">
                                 <label tabindex="0" for="email" aria-label="What's your email?"></label>
                                 <input
+                                data-aos="fade-left"
                                 placeholder="Email"
                                 name="email"
                                 type="text" id="email">
                                 <label tabindex="0" for="message" aria-label="What's your message?"></label>
-                                <textarea tabindex="0"
+                                <textarea 
+                                data-aos="fade-left"
+                                tabindex="0"
                                 placeholder="Message"
                                 name="message"
                                 type="text" id="message"></textarea>

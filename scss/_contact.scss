@@ -44,9 +44,14 @@
     }
 
     .contact--container__right h3 {
-        font-size: 3rem !important;
+        font-size: calc(1.8rem + 1.5vw) !important;
         text-align: center;
         margin-bottom: 5rem;
+        line-height: 150%;
+
+        br {
+            display: none;
+        }
     }
     
     .contact--formBox button {
