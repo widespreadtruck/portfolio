@@ -1,21 +1,50 @@
 .contact {
     min-height: 60rem;
 
-    .projects--title h2 {
-        margin-bottom: 5rem;
+    // .wrapper {
+    //     width: 80%;
+    // }
+}
+
+.contact .projects--title {
+    width: 100%;
+    position: relative;
+    margin-top: 8rem;
+
+    .redLine {
+        position: absolute;
+        width: 5rem;
+        border-bottom: 3px solid $red;
+        top: 0rem;
+        left: calc((100% - 5rem) / 2);
+
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 6rem;
+        font-family: $heading-font;
+        margin: 0 auto;
+        margin: 1rem 0 8rem 0;
+        
+        @include media("<tablet"){            
+            font-size: 4rem;
+        }
     }
 }
 
+
 @include media(">phone", "<=tablet") {
-    .contact .projects--title {
-        margin-top: 7rem;
-    }
+    // .contact .projects--title {
+    //     margin-top: 7rem;
+    // }
 
     .contact .projects--title h2{
-        font-size: 4rem;
+        margin-bottom: 5rem;
     }
 
     .contact--container__right h3 {
+        font-size: 3rem !important;
         text-align: center;
         margin-bottom: 5rem;
     }
@@ -46,6 +75,8 @@
     .contact--container__right {
         // @include bor;
         flex: 1 0 50%;
+        // width: 100%;
+
 
         h3 {
             font-family: $heading-font;
@@ -88,8 +119,12 @@
         bottom: 0.5rem;
         right: 0;
         border-bottom: 13px solid $red;
-        width: 32rem;
+        width: 100%;
         z-index: -1;
+    }
+
+    @include media(">phone", "<=tablet") {
+        font-size: 2.5rem;
     }
 }
 
