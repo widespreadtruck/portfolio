@@ -46,7 +46,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
 
     @include media(">phone", "<=tablet") {
         flex-direction: column;
@@ -57,20 +57,18 @@
         list-style: none;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        flex: 1 0 60%;
+        flex: 1 1 60%;
         padding: 0;
 
         @include media(">phone", "<=tablet") {
-            // justify-content: space-between;
-            // align-items: flex-start;
-            // flex: 1 0 100% !important;
+            justify-content: space-evenly;
             width: 100%;
         }
 
         li {
-            font-size: 11rem;
+            font-size: 8rem;
             // width: 16rem;
             // height: 13rem;
             display: flex;
@@ -96,7 +94,7 @@
     .skillList-secondRow,
     .skillList-thirdRow,
     .skillList-fourthRow {
-        padding-right: 12rem;
+        padding-right: 5rem;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -118,12 +116,13 @@
     }
 
     .skillList-right {
-        flex: 1 0 40%;
+        flex: 1 2 40%;
         display: flex;
         justify-content: flex-end;
 
         img {
             display: block;
+            width: 100%;
         }
 
         @include media(">phone", "<=tablet") {

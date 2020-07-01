@@ -2,8 +2,40 @@
 .about {
     background-color: $second-bg;
     min-height: 600px;
-    @include flexHor;
+    @include flexVer;
 }   
+
+.about--title {
+    position: relative;
+    margin-top: 10rem;
+
+    @include media(">phone", "<=tablet") {
+        flex-direction: column;
+        margin-top: 8rem;
+    }
+
+    .redLine {
+        position: absolute;
+        width: 5rem;
+        border-bottom: 3px solid $red;
+        top: 0rem;
+        left: calc((100% - 5rem) / 2);
+    }
+
+    h2 {
+        font-size: 6rem;
+        font-family: $heading-font;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+
+        @include media(">phone", "<=tablet") {
+            font-size: 4rem;
+            margin-bottom: 0rem;
+        }
+    }
+}
+
 
 .aboutMeText.wrapper{
     margin: 0;
@@ -11,7 +43,7 @@
     font-size: 3.6rem;
     line-height: 5.8rem;
     margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 
     @include media(">phone", "<=tablet") {
     font-size: 2.6rem;

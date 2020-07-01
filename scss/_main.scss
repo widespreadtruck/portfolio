@@ -69,6 +69,10 @@ a {
     &:hover {
         background-color: $red;
     } 
+
+    // @include media(">=phone", "<=tablet") {
+    //     // margin-top: -2rem;
+    // }
 }
 
 // nav bar styles
@@ -76,40 +80,85 @@ a {
     background-color: $header-bg;
     position: fixed;
     width: 100%;
-    height: 15vh;
+    height: 12rem;
+
     top: 0px;
     z-index: 10;
+
+    .wrapper {
+        width: 82%;
+    }
+}
+
+
+@include media(">=phone", "<=tablet") {
+    .nav-wrapper {
+        height: 8rem !important;
+    }
+    .header--nav {
+        height: 8rem !important;
+    }
+
+    .header-content {
+        margin-top: 8rem !important;
+    }
 }
 
 .header--nav {
-    height: 15vh;
+    height: 12rem;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 3fr 5fr;
-    grid-template-areas: "header-hire header-nav";
-    grid-template-rows:  2fr;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+
+    // display: grid;
+    // grid-template-columns: 3fr 5fr;
+    // grid-template-areas: "header-hire header-nav";
+    // grid-template-rows:  2fr;
+    // align-items: center;
     
     .header-hire {
-        grid-area: header-hire;
+        // grid-area: header-hire;
         
     }
     .header-navig {
-        grid-area: header-nav;
+        // grid-area: header-nav;
         padding-left: 0;
-        display: grid;
-        grid-template-columns: repeat(6, auto);
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+
+        // display: grid;
+        // grid-template-columns: repeat(5, auto);
         
         .header--nav__a {
-            justify-self: right;
+            // justify-self: right;
+            margin-left: 2rem;
+
         }
     }
 }
 
+.header--nav__a {
+    position: relative;
+
+    &:hover:after {
+        content: '';
+        position: absolute;
+        border-bottom: 2px solid $red;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        margin-bottom: -0.5rem;
+    }
+}
+
+
 //styles under nav bar
 .header-content {
     z-index: -1;
-    margin-top: 15vh;
+    margin-top: 12rem;
     background-color: $header-bg;
 
     .header-content__container {
@@ -153,8 +202,8 @@ a {
 }
 
 .decor-triangle {
-    top: 0;
-    left: 0;
+    top: 1rem;
+    left: 2rem;
     // top: 13rem;
     // left: 40px;
     width: 3rem;
@@ -175,13 +224,14 @@ a {
     z-index: -1;
 
     @include media(">phone", "<=tablet") {
-        top: 12vh;
+        top: 15vh;
         left: calc((100% - 250px) / 2);
         width: 250px;
     }
 
 }
 .decor-dotsLeft {
+    display: none;
     bottom: -16vh;
     left: 0;
     animation: jump 3s ease-in-out infinite;
@@ -201,18 +251,18 @@ a {
 
 
     @include media(">phone", "<=tablet") {
-        bottom: -14vh;
+        bottom: -17vh;
         left: 0;
         animation: jump 3s ease-in-out infinite;
         @keyframes jump {
             0% {
-                bottom: -14vh;
+                bottom: -17vh;
             }
             50% {
-                bottom: -10vh;
+                bottom: -13vh;
             }
             100% {
-                bottom: -14vh
+                bottom: -17vh
             }
         }
     }
@@ -245,8 +295,14 @@ a {
     animation: spin 10s linear infinite;
     spin {
         100% {rotate: (360deg);};
-    }
+    };
+
+    @include media(">phone", "<=tablet") {
+        bottom: 5rem;
+        right: 0rem;
+    };
 }
+
 .iAmNikita {
     display: flex;
     flex-direction: column;
@@ -284,32 +340,33 @@ a {
     }
 
     .frontEnd {
-        font-size: 1.8rem;
-        font-weight: 200;
+        font-size: 2.5rem;
+        font-weight: 300;
         margin: 0;
         padding: 0;
+        height: 2.5rem;
     }
 
 }
 
-.socialLinks {
+.iAmNikita .socialLinks {
     list-style: none;
-    display: flex;
+    // display: flex;
+    @include flexHor;
+
     margin-top: 6rem;
     margin-bottom: 0;
-    padding: 0 0 0 0;
-
-    @include media(">phone", "<=tablet") {
-        margin-top: 4rem;
-    }
+    justify-content: space-between;
+    width: 290px;
     
     li {
+        // padding: 1rem;
         margin-right: 4rem;
         
         a {
             width: 4rem;
             color: white;
-            font-size: 2.3rem;
+            font-size: 3rem;
         }
     }
 }
@@ -317,10 +374,10 @@ a {
 .iAmNikita .socialLinks li {
     @include media(">phone", "<=tablet") {
         margin-right: 2rem;
+        margin-top: 1rem;
     }
 
     a {
-
         @include media(">phone", "<=tablet") {
             font-size: 3.3rem;
         }
