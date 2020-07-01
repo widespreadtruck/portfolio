@@ -287,21 +287,21 @@ a {
 }
 
 
-.decor-circleRight {
-    position: absolute;
-    bottom: -5rem;
-    right: 2rem;
-    width: 4rem;
-    animation: spin 10s linear infinite;
-    spin {
-        100% {rotate: (360deg);};
-    };
+// .decor-circleRight {
+//     position: absolute;
+//     bottom: -5rem;
+//     right: 2rem;
+//     width: 4rem;
+//     animation: spin 10s linear infinite;
+//     spin {
+//         100% {rotate: (360deg);};
+//     };
 
-    @include media(">phone", "<=tablet") {
-        bottom: 5rem;
-        right: 0rem;
-    };
-}
+//     @include media(">phone", "<=tablet") {
+//         bottom: 5rem;
+//         right: 0rem;
+//     };
+// }
 
 .iAmNikita {
     display: flex;
@@ -331,7 +331,7 @@ a {
         font-size: 60px;
         font-weight: 700;
         margin-top: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         letter-spacing: 5px;
 
     @include media(">phone", "<=tablet") {
@@ -356,17 +356,18 @@ a {
 
     margin-top: 6rem;
     margin-bottom: 0;
+    padding-left: 0;
     justify-content: space-between;
     width: 290px;
     
     li {
         // padding: 1rem;
-        margin-right: 4rem;
+        // margin-right: 4rem;
         
         a {
             width: 4rem;
             color: white;
-            font-size: 3rem;
+            font-size: 4rem;
         }
     }
 }

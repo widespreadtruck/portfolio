@@ -71,7 +71,7 @@
   height: 100%;
   background-color: #1c1e57;
   overflow-y: auto;
-  left: -100%;
+  left: -100vw;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease; }
   .burger-menu__nav a {
@@ -695,24 +695,6 @@ a {
       100% {
         bottom: -16vh !important; } } }
 
-.decor-circleRight {
-  position: absolute;
-  bottom: -50px;
-  bottom: -5rem;
-  right: 20px;
-  right: 2rem;
-  width: 40px;
-  width: 4rem;
-  -webkit-animation: spin 10s linear infinite;
-  animation: spin 10s linear infinite; }
-  .decor-circleRight spin 100% {
-    rotate: 360deg; }
-
-@media (min-width: 321px) and (max-width: 1020px) {
-  .decor-circleRight {
-    bottom: 5rem;
-    right: 0rem; } }
-
 .iAmNikita {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -748,8 +730,8 @@ a {
     font-size: 60px;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 20px;
-    margin-bottom: 2rem;
+    margin-bottom: 30px;
+    margin-bottom: 3rem;
     letter-spacing: 5px; }
 
 @media (min-width: 321px) and (max-width: 1020px) {
@@ -782,19 +764,17 @@ a {
   margin-top: 60px;
   margin-top: 6rem;
   margin-bottom: 0;
+  padding-left: 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 290px; }
-  .iAmNikita .socialLinks li {
-    margin-right: 40px;
-    margin-right: 4rem; }
-    .iAmNikita .socialLinks li a {
-      width: 40px;
-      width: 4rem;
-      color: white;
-      font-size: 30px;
-      font-size: 3rem; }
+  .iAmNikita .socialLinks li a {
+    width: 40px;
+    width: 4rem;
+    color: white;
+    font-size: 40px;
+    font-size: 4rem; }
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .iAmNikita .socialLinks li {
@@ -895,6 +875,21 @@ a {
   .about--title h2 {
     font-size: 4rem;
     margin-bottom: 0rem; } }
+  .about--title .decor-circleRight {
+    position: absolute;
+    top: -5vw;
+    right: -30vw;
+    width: 40px;
+    width: 4rem;
+    -webkit-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite; }
+    .about--title .decor-circleRight spin 100% {
+      rotate: 360deg; }
+
+@media (min-width: 321px) and (max-width: 1020px) {
+  .about--title .decor-circleRight {
+    top: -6vw;
+    right: -25vw; } }
 
 .aboutMeText.wrapper {
   margin: 0;

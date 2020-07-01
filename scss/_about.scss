@@ -34,6 +34,22 @@
             margin-bottom: 0rem;
         }
     }
+
+    .decor-circleRight {
+        position: absolute;
+        top: -5vw;
+        right: -30vw;
+        width: 4rem;
+        animation: spin 10s linear infinite;
+        spin {
+            100% {rotate: (360deg);};
+        };
+
+        @include media(">phone", "<=tablet") {
+            top: -6vw;
+            right: -25vw;
+        };
+    }
 }
 
 
