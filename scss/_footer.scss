@@ -23,6 +23,7 @@
             // align-items: flex-start;
             padding-left: 0;
             padding-right: 0;
+            margin-top: 2rem;
             
             @include media(">tablet") {
                 display: none;
