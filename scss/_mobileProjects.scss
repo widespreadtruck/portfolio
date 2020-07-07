@@ -53,6 +53,7 @@
     &__imageBox {
         margin: 0 auto;
         @include flexHor;
+        margin-bottom: 2rem;
 
         img {
             display: block;
@@ -63,6 +64,7 @@
     &__projectName h3 {
         text-align: center;
         font-size: 3.2rem;
+        margin-bottom: 2rem;
 
         @include media(">phone", "<=tablet") {
             font-size: 2.3rem;
@@ -72,7 +74,12 @@
     &__description {
         text-align: center;
         font-size: 2.5rem;
+        margin-bottom: 2rem;
         // font-size: calc(1.6rem + 0.5vw);
+
+        p {
+            margin-bottom: 2rem;
+        }
 
         @include media(">phone", "<=tablet") {
             font-size: 2rem;

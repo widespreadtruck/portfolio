@@ -50,7 +50,7 @@
             top: -6vw;
             right: -25vw;
         };
-    }
+    };
 }
 
 
@@ -58,9 +58,10 @@
     margin: 0;
     padding: 0;
     font-size: 3.6rem;
-    line-height: 5.8rem;
+    line-height: 150%;
     margin-top: 5rem;
     margin-bottom: 8rem;
+    font-weight: 400;
 
     @include media(">phone", "<=tablet") {
     font-size: 2.6rem;
@@ -83,13 +84,17 @@
     }
 }
 
-.junoLink {
+.webDev {
     color: #EA593E;
-
-    &:visited {
-        color: #EA593E;
-    }
 }
+
+// .junoLink {
+//     color: #EA593E;
+
+//     &:visited {
+//         color: #EA593E;
+//     }
+// }
 
 .rbc {
     color: #0057B4;

@@ -474,6 +474,12 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 html {
   font-size: 62.5%;
   font-family: "Nunito Sans", sans-serif;
@@ -505,14 +511,16 @@ a {
   border: 2px solid #e51d46;
   background-color: transparent;
   color: white;
-  font-family: "Nunito Sans", sans-serif; }
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 5px;
+  margin-bottom: 0.5rem; }
   .hire-button:hover {
     background-color: #e51d46; }
 
 .nav-wrapper {
   background-color: #030724;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: 120px;
   height: 12rem;
   top: 0px;
@@ -553,19 +561,17 @@ a {
     justify-content: space-between; }
     .header--nav .header-navig .header--nav__a {
       margin-left: 20px;
-      margin-left: 2rem; }
+      margin-left: 2rem;
+      text-transform: uppercase;
+      border: 2px solid transparent;
+      padding-bottom: 5px;
+      padding-bottom: 0.5rem; }
 
-.header--nav__a {
-  position: relative; }
-  .header--nav__a:hover:after {
-    content: '';
-    position: absolute;
-    border-bottom: 2px solid #e51d46;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    margin-bottom: -5px;
-    margin-bottom: -0.5rem; }
+.header--nav__a:hover,
+.header--nav__a:active {
+  border-bottom: 2px solid #e51d46 !important;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
 
 .header-content {
   z-index: -1;
@@ -780,12 +786,11 @@ a {
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .iAmNikita .socialLinks li {
-    margin-right: 2rem;
     margin-top: 1rem; } }
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .iAmNikita .socialLinks li a {
-    font-size: 3.3rem; } }
+    font-size: 3.8rem; } }
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .header-content__container {
@@ -899,12 +904,12 @@ a {
   padding: 0;
   font-size: 36px;
   font-size: 3.6rem;
-  line-height: 58px;
-  line-height: 5.8rem;
+  line-height: 150%;
   margin-top: 50px;
   margin-top: 5rem;
   margin-bottom: 80px;
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem;
+  font-weight: 400; }
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .aboutMeText.wrapper {
@@ -922,10 +927,8 @@ a {
       bottom: 0.5rem;
       left: 0; }
 
-.junoLink {
+.webDev {
   color: #EA593E; }
-  .junoLink:visited {
-    color: #EA593E; }
 
 .rbc {
   color: #0057B4; }
@@ -1220,14 +1223,18 @@ a {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 20px;
+    margin-bottom: 2rem; }
     .mobileProjects--projectBox__imageBox img {
       display: block;
       width: 100%; }
   .mobileProjects--projectBox__projectName h3 {
     text-align: center;
     font-size: 32px;
-    font-size: 3.2rem; }
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    margin-bottom: 2rem; }
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .mobileProjects--projectBox__projectName h3 {
@@ -1235,7 +1242,12 @@ a {
   .mobileProjects--projectBox__description {
     text-align: center;
     font-size: 25px;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-bottom: 2rem; }
+    .mobileProjects--projectBox__description p {
+      margin-bottom: 20px;
+      margin-bottom: 2rem; }
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .mobileProjects--projectBox__description {
@@ -1553,7 +1565,9 @@ a {
       -ms-flex-align: center;
       align-items: center;
       padding-left: 0;
-      padding-right: 0; }
+      padding-right: 0;
+      margin-top: 20px;
+      margin-top: 2rem; }
       @media (min-width: 1021px) {
         .footer .footer--container .footer-mobileLinks {
           display: none; } }
