@@ -93,7 +93,8 @@
     .skillList-firstRow,
     .skillList-secondRow,
     .skillList-thirdRow,
-    .skillList-fourthRow {
+    .skillList-fourthRow,
+    .skillList-fifthRow {
         padding-right: 5rem;
         width: 100%;
         display: flex;
@@ -108,7 +109,8 @@
     
     .skillList-firstRow,
     .skillList-secondRow,
-    .skillList-thirdRow {
+    .skillList-thirdRow,
+    .skillList-fourthRow {
         margin-bottom: 5rem;
 
         @include media(">phone", "<=tablet") {

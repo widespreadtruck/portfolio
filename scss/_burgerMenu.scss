@@ -1,7 +1,9 @@
 .burger-menu {
     width: 100%;
+    // width: 82%;
     position: relative;
     height: 8rem;
+    
 }
 
 .burger-menu__button {
@@ -13,7 +15,7 @@
  height: 40px;
  border-radius: 50%;
 //  background-color: #2a2a2a;
- transition: 0.4s;
+ transition: all 0.4s easy;
 
 //  @include media(">=phone", "<=tablet") {
 //  top: 0rem;
@@ -122,6 +124,10 @@
 }
 
 
+
+
+
+
 .header-navig {
     @include media(">phone", "<=tablet") {
         display: none !important;
@@ -138,3 +144,13 @@
         opacity: 1 !important;
     }
 }
+
+
+
+
+
+
+
+
+
+

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="origin">
     <meta name="description" content="Web development portfolio for Nikita Guliaev">
-    <title>Nikita Guliaev | Junior Developer</title>
+    <title>Nikita Guliaev | Front-end Web Developer</title>
 
     <!-- Import Font Awesome -->
     <script src="https://kit.fontawesome.com/318c8c8e58.js" crossorigin="anonymous"></script>
@@ -20,32 +20,15 @@
 </head>
 <body>
     <header id="home">
-        
-        <!-- burger menu STARTS-->
-        <!-- <div class="burger-menu wrapper">
-            <a href="#" class="burger-menu__button">
-                <span class="burger-menu__lines"></span>
-            </a>
-
-            <nav class="burger-menu__nav">
-                <a href="#home" class="burger-menu__link">Home</a>
-                <a href="#about" class="burger-menu__link">About</a>
-                <a href="#stack" class="burger-menu__link">Stack</a>
-                <a href="#projects" class="burger-menu__link">Projects</a>
-                <a href="#contact" class="burger-menu__link">Contact</a>
-            </nav>
-            <div class="burger-menu__overlay"></div>
-        </div> -->
-        <!-- burger menu ENDS -->
-
         <!-- Full sized menu starts -->
         <div class="nav-wrapper">
             <div class="wrapper">
                 <nav class="header--nav">
                     <div class="header-hire">
-                        <button tabindex="0" class="hire-button"><a href="https://nikitaguliaev.com/Nikita_Guliaev_Web_Developer.pdf" download="Nikita Guliaev - Web Dev Resume" target="_blank" rel="noopener">Download CV</a></button>
+                        <button tabindex="0" class="hire-button"><a href="https://nikitaguliaev.com/Nikita_Guliaev_Web_Developer.pdf" download="Nikita Guliaev - Web Dev Resume" target="_blank" rel="noopener noreferrer">Download CV</a></button>
                     </div>
                     <!-- burger menu STARTS-->
+
                     <div class="burger-menu">
                         <a href="#" class="burger-menu__button">
                             <span class="burger-menu__lines"></span>
@@ -60,6 +43,7 @@
                         </nav>
                         <div class="burger-menu__overlay"></div>
                     </div>
+                    
                     <!-- burger menu ENDS -->
                     <ul class="header-navig">
                         <a tabindex="0" class="header--nav__a" href="#home">Home</a>
@@ -87,9 +71,9 @@
                             <!-- JS typed text goes here -->
                             <h3 tabindex="0" class="frontEnd" id="typed"></h3>
                             <ul tabindex="0" class="socialLinks">
-                                <li><a target="_blank" rel="noopener" href="https://twitter.com/nikita_guliaev"><i class="fab fa-twitter-square"></i></a></li>
-                                <li><a target="_blank" rel="noopener" href="https://github.com/widespreadtruck"><i class="fab fa-github-square"></i></a></li>
-                                <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/nikita-guliaev-ma-808aab8a/"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/nikita_guliaev"><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/widespreadtruck"><i class="fab fa-github-square"></i></a></li>
+                                <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nikita-guliaev-ma-808aab8a/"><i class="fab fa-linkedin"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -112,8 +96,6 @@
             (<span class="webDev">Product Owner</span> on a large Agile project), I discovered a passion for coding and went back to school to learn Front-End Web Development. My <span class="webDev">Superpower</span> is a “I don’t know everything, but I can learn anything” attitude. Now I’d love to put my Tech
             and Finance skills to work for your company.
             
-            <!-- <span><a class="junoLink" href="https://junocollege.com/" target="_blank"> Juno College of
-            Technology</a></span> -->
         
         </h3>
         </section>
@@ -181,6 +163,20 @@
                                 <p>REST API's</p>
                             </li tabindex="0">
                         </div>
+                        <div data-aos="fade-right" class="skillList-fifthRow">
+                            <li tabindex="0">
+                                <img src="./assets//skillz/13.png" alt="react logo" aria-label="Styled Components logo">
+                                <p>Styled Components</p>
+                            </li>
+                            <li tabindex="0">
+                                <img src="./assets//skillz/14.png" alt="react logo" aria-label="Node.js logo">
+                                <p>Node.js</p>
+                            </li>
+                            <li tabindex="0">
+                                <img src="./assets//skillz/15.png" alt="react logo" aria-label="MySQL logo">
+                                <p>MySQL</p>
+                            </li tabindex="0">
+                        </div>
                     </ul>
                     <div class="skillList-right"><img src="./assets/2.png" alt="an illustration of a developer sitting in front of a computer"></div>
                 </div>
@@ -193,8 +189,42 @@
                     <h2 tabindex="0">My Projects</h2>
                 </div>
 
+                <div class="mobileProjects--projectBox" data-aos="fade-up" data-aos-easing="ease-in-out">
+                    <div tabindex="0" class="mobileProjects--projectBox__imageBox"><img src="./assets/projects/laptopQuiz.png"
+                            alt="image of the project on a laptop screen"></div>
+                    <div class="mobileProjects--projectBox__projectName">
+                        <h3>Full Stack Quiz App</h3>
+                    </div>
+                    <div tabindex="0" class="mobileProjects--projectBox__description">
+                        <p>The purpose of the app is to collect answers from multiple participants during conferences or Zoom calls. At the
+                        beginning the presenter has to sign in using Admin's credentials. Then, there are four different presentations with four
+                        different tests to pick from. Upon a Presenters' request the audience can use their own devices to join a 'quiz room'
+                        using a link or a QR code. They next asked to sign in using an Event ID shown on the presenter's screen. Presenter
+                        controls the flow of the presentation as well as what the audience sees on their devices while the audience is able to
+                        select and submit one of the four answers to the current question shown on their devices. Simultaneously, the Presenter
+                        is able to see how many people signed in at the beginning of the presentation and how many participants submitted
+                        answers for each question. Then, the answers are stored in a MySQL database and at the end of the presentation the
+                        presenter can see the percentage breakdown of the answers given by the audience. Further, a CSV file with detailed
+                        results is generated and available for a download. At the end of the test the users are asked to submit their email and
+                        name if they want to subscribe to the newsletters.</p>
+                        <h4>Stack used:</h4>
+                    </div>
+                    <div tabindex="0" data-aos="zoom-in" class="mobileProjects--projectBox__stack">
+                        <img src="./assets//skillz/1.png" alt="stack item">
+                        <img src="./assets//skillz/13.png" alt="stack item">
+                        <img src="./assets//skillz/14.png" alt="stack item">
+                        <img src="./assets//skillz/15.png" alt="stack item">
+                        <img src="./assets//skillz/7.png" alt="stack item">
+                    </div>
+                    <div tabindex="0" class="mobileProjects--projectBox__buttons">
+                        <a data-aos="fade-right" href="https://widespreadtruck.github.io/quiz-app/" target="_blank" rel="noopener noreferrer">Live
+                            Link</a>
+                        <a data-aos="fade-left" href="https://github.com/widespreadtruck/quiz-app" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+
                 <div class="mobileProjects--containerForAll">
-                    <div class="mobileProjects--projectBox project1" data-aos="fade-up" data-aos-easing="ease-in-out">
+                    <div class="mobileProjects--projectBox" data-aos="fade-up" data-aos-easing="ease-in-out">
                         <div tabindex="0" class="mobileProjects--projectBox__imageBox"><img src="./assets/projects/laptopCalculator.png" alt="image of the project on a laptop screen"></div>
                         <div class="mobileProjects--projectBox__projectName"><h3>Daily Budget Calculator</h3></div>
                         <div class="mobileProjects--projectBox__description">
@@ -211,11 +241,11 @@
                         </div>
                         <div tabindex="0" class="mobileProjects--projectBox__buttons">
                             <a data-aos="fade-right" href="https://group-three-libraree-jamboree.github.io/project-six/"
-                            target="_blank">Live Link</a>
+                            target="_blank" rel="noopener noreferrer">Live Link</a>
                             <a data-aos="fade-left" href="https://github.com/Group-Three-Libraree-Jamboree/project-six"
-                            target="_blank">GitHub</a></div>
+                            target="_blank" rel="noopener noreferrer">GitHub</a></div>
                     </div>
-                    <div class="mobileProjects--projectBox project2" data-aos="fade-up" data-aos-easing="ease-in-out">
+                    <!-- <div class="mobileProjects--projectBox project2" data-aos="fade-up" data-aos-easing="ease-in-out">
                         <div tabindex="0" class="mobileProjects--projectBox__imageBox"><img src="./assets/projects/laptopPokemon.png" alt="image of the project on a laptop screen"></div>
                         <div class="mobileProjects--projectBox__projectName"><h3>Who Is That Pokemon?</h3></div>
                         <div tabindex="0" class="mobileProjects--projectBox__description">
@@ -230,10 +260,10 @@
                             <img src="./assets//skillz/7.png" alt="stack item">
                         </div>
                         <div tabindex="0" class="mobileProjects--projectBox__buttons">
-                            <a data-aos="fade-right" href="https://widespreadtruck.github.io/who-is-that-pokemon/" target="_blank">Live Link</a>
-                            <a data-aos="fade-left" href="https://github.com/widespreadtruck/who-is-that-pokemon" target="_blank">GitHub</a></div>
-                    </div>
-                    <div class="mobileProjects--projectBox project3" data-aos="fade-up" data-aos-easing="ease-in-out">
+                            <a data-aos="fade-right" href="https://widespreadtruck.github.io/who-is-that-pokemon/" target="_blank" rel="noopener noreferrer">Live Link</a>
+                            <a data-aos="fade-left" href="https://github.com/widespreadtruck/who-is-that-pokemon" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+                    </div> -->
+                    <div class="mobileProjects--projectBox" data-aos="fade-up" data-aos-easing="ease-in-out">
                         <div tabindex="0" class="mobileProjects--projectBox__imageBox"><img src="./assets/projects/laptopOne.png" alt="image of the project on a laptop screen"></div>
                         <div tabindex="0" class="mobileProjects--projectBox__projectName"><h3>One Magazine Website Template</h3></div>
                         <div tabindex="0" class="mobileProjects--projectBox__description">
@@ -249,9 +279,9 @@
                         </div>
                         <div tabindex="0" class="mobileProjects--projectBox__buttons">
                             <a data-aos="fade-right" href="https://widespreadtruck.github.io/nikita-guliaev-project-one"
-                            target="_blank">Live Link</a>
+                            target="_blank" rel="noopener noreferrer">Live Link</a>
                             <a data-aos="fade-left" href="https://github.com/widespreadtruck/nikita-guliaev-project-one"
-                            target="_blank">GitHub</a></div>                        
+                            target="_blank" rel="noopener noreferrer">GitHub</a></div>                        
                     </div>
                 </div>
             </div>
@@ -302,16 +332,11 @@
         <footer class="footer">
             <div class="wrapper">
                 <div class="footer--container">
-                    <h4 tabindex="0">Follow me</h4>
-                    <ul class="socialLinks">
-                        <li tabindex="0"><a href="https://twitter.com/nikita_guliaev"><i class="fab fa-twitter-square"></i></a></li>
-                        <li tabindex="0"><a href="https://github.com/widespreadtruck"><i class="fab fa-github-square"></i></a></li>
-                        <li tabindex="0"><a href="https://www.linkedin.com/in/nikita-guliaev-ma-cams-808aab8a/"><i class="fab fa-linkedin"></i></a></li>
-                    </ul> 
+                    <h4 tabindex="0">Follow Me</h4>
                     <ul class="footer-mobileLinks">
-                        <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/nikita-guliaev-ma-808aab8a/">LinkedIn</a>
-                        <a target="_blank" rel="noopener" href="https://github.com/widespreadtruck">GitHub</a>
-                        <a target="_blank" rel="noopener" href="https://twitter.com/nikita_guliaev">Twitter</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nikita-guliaev-ma-808aab8a/">LinkedIn</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/widespreadtruck">GitHub</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/nikita_guliaev">Twitter</a>
                     </ul>
                     <p tabindex="0">© 2020 Nikita Guliaev. All rights reserved.</p>
                 </div>

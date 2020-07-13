@@ -7,7 +7,7 @@
         width: $wrapper-width;
         // width: 82%;
         margin: 0 auto;
-        max-width: 1080px;
+        max-width: 1140px;
     }
 }
 
@@ -75,7 +75,7 @@
         text-align: center;
         font-size: 2.5rem;
         margin-bottom: 2rem;
-        // font-size: calc(1.6rem + 0.5vw);
+        line-height: 150%;
 
         p {
             margin-bottom: 2rem;
@@ -100,6 +100,7 @@
         a {
             display: inline-block;
             max-width: 15rem;
+            width: 35%;
             height: 4rem;
             border-radius: 5px;
             border: 2px solid $red;
@@ -117,7 +118,7 @@
 
 .mobileProjects--projectBox__stack img {
     display: block;
-    min-width: 4rem;
+    min-width: 3rem;
     max-width: 8rem;
     width: 100%;
     margin: 0 0.5rem;
