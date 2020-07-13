@@ -25,7 +25,6 @@ $(function() {
     
     burgerMenu('.burger-menu');
 
-
     // typed.js
     const typed = new Typed('#typed', {
         strings: ["Junior Developer", "Finance Background", "Book Nerd", "Dog Lover", "Forever Student"],

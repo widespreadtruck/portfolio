@@ -14,8 +14,8 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -webkit-transition: 0.4s;
-  transition: 0.4s; }
+  -webkit-transition: all 0.4s easy;
+  transition: all 0.4s easy; }
 
 .burger-menu__button:hover .burger-menu__lines {
   -webkit-filter: brightness(0.7);
@@ -484,7 +484,8 @@ html {
   font-size: 62.5%;
   font-family: "Nunito Sans", sans-serif;
   background-color: #030724;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility; }
 
 body {
   color: #ffffff;
@@ -500,7 +501,7 @@ a {
 .wrapper {
   width: 82%;
   margin: 0 auto;
-  max-width: 1080px; }
+  max-width: 1140px; }
 
 .hire-button {
   width: 150px;
@@ -525,8 +526,6 @@ a {
   height: 12rem;
   top: 0px;
   z-index: 10; }
-  .nav-wrapper .wrapper {
-    width: 82%; }
 
 @media (min-width: 320px) and (max-width: 1020px) {
   .nav-wrapper {
@@ -1075,7 +1074,8 @@ a {
   .stackSection--container .skillList-firstRow,
   .stackSection--container .skillList-secondRow,
   .stackSection--container .skillList-thirdRow,
-  .stackSection--container .skillList-fourthRow {
+  .stackSection--container .skillList-fourthRow,
+  .stackSection--container .skillList-fifthRow {
     padding-right: 50px;
     padding-right: 5rem;
     width: 100%;
@@ -1090,21 +1090,24 @@ a {
   .stackSection--container .skillList-firstRow,
   .stackSection--container .skillList-secondRow,
   .stackSection--container .skillList-thirdRow,
-  .stackSection--container .skillList-fourthRow {
+  .stackSection--container .skillList-fourthRow,
+  .stackSection--container .skillList-fifthRow {
     padding: 0;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     padding-right: 0rem; } }
   .stackSection--container .skillList-firstRow,
   .stackSection--container .skillList-secondRow,
-  .stackSection--container .skillList-thirdRow {
+  .stackSection--container .skillList-thirdRow,
+  .stackSection--container .skillList-fourthRow {
     margin-bottom: 50px;
     margin-bottom: 5rem; }
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .stackSection--container .skillList-firstRow,
   .stackSection--container .skillList-secondRow,
-  .stackSection--container .skillList-thirdRow {
+  .stackSection--container .skillList-thirdRow,
+  .stackSection--container .skillList-fourthRow {
     margin-bottom: 5rem; } }
   .stackSection--container .skillList-right {
     -webkit-box-flex: 1;
@@ -1162,7 +1165,7 @@ a {
     align-items: center;
     width: 82%;
     margin: 0 auto;
-    max-width: 1080px; }
+    max-width: 1140px; }
 
 .mobileProjects--title {
   width: 100%;
@@ -1244,7 +1247,8 @@ a {
     font-size: 25px;
     font-size: 2.5rem;
     margin-bottom: 20px;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    line-height: 150%; }
     .mobileProjects--projectBox__description p {
       margin-bottom: 20px;
       margin-bottom: 2rem; }
@@ -1289,6 +1293,7 @@ a {
       display: inline-block;
       max-width: 150px;
       max-width: 15rem;
+      width: 35%;
       height: 40px;
       height: 4rem;
       border-radius: 5px;
@@ -1317,8 +1322,8 @@ a {
 
 .mobileProjects--projectBox__stack img {
   display: block;
-  min-width: 40px;
-  min-width: 4rem;
+  min-width: 30px;
+  min-width: 3rem;
   max-width: 80px;
   max-width: 8rem;
   width: 100%;
@@ -1521,7 +1526,6 @@ a {
     color: white; }
 
 .footer {
-  min-height: 300px;
   background-color: #020414; }
   .footer .footer--container {
     display: -webkit-box;
@@ -1543,8 +1547,8 @@ a {
       font-size: 2.4rem;
       margin-bottom: 0px;
       margin-bottom: 0rem;
-      margin-top: 100px;
-      margin-top: 10rem; }
+      margin-top: 60px;
+      margin-top: 6rem; }
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .footer .footer--container h4 {
@@ -1566,54 +1570,20 @@ a {
       align-items: center;
       padding-left: 0;
       padding-right: 0;
-      margin-top: 20px;
-      margin-top: 2rem; }
-      @media (min-width: 1021px) {
-        .footer .footer--container .footer-mobileLinks {
-          display: none; } }
+      margin-bottom: 30px;
+      margin-bottom: 3rem;
+      margin-top: 40px;
+      margin-top: 4rem; }
       .footer .footer--container .footer-mobileLinks a {
         margin-bottom: 20px;
         margin-bottom: 2rem; }
     .footer .footer--container p {
       margin-top: 0;
-      margin-bottom: 100px;
-      margin-bottom: 10rem; }
+      margin-bottom: 30px;
+      margin-bottom: 3rem; }
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .footer .footer--container p {
     font-size: 1.6rem;
     text-align: center;
     margin-bottom: 5rem; } }
-
-.footer .socialLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style: none;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0;
-  width: 200px;
-  width: 20rem; }
-  .footer .socialLinks li {
-    margin-top: 30px;
-    margin-top: 3rem;
-    margin-bottom: 30px;
-    margin-bottom: 3rem;
-    font-size: 30px;
-    font-size: 3rem; }
-
-@media (min-width: 321px) and (max-width: 1020px) {
-  .footer .socialLinks {
-    display: none; } }

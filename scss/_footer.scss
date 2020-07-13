@@ -1,5 +1,5 @@
 .footer {
-    min-height: 300px;
+    // min-height: 300px;
     background-color: #020414;
 
     .footer--container {
@@ -9,7 +9,7 @@
             font-family: $heading-font;
             font-size: 2.4rem;
             margin-bottom: 0rem;
-            margin-top: 10rem;
+            margin-top: 6rem;
 
             @include media(">phone", "<=tablet") {
                 margin-top: 5rem;
@@ -23,12 +23,9 @@
             // align-items: flex-start;
             padding-left: 0;
             padding-right: 0;
-            margin-top: 2rem;
-            
-            @include media(">tablet") {
-                display: none;
-            }
-            
+            margin-bottom: 3rem;
+            margin-top: 4rem;
+                        
             a {
                 margin-bottom: 2rem;
             }
@@ -36,7 +33,7 @@
 
         p {
             margin-top: 0;
-            margin-bottom: 10rem;
+            margin-bottom: 3rem;
 
             @include media(">phone", "<=tablet") {
                 font-size: 1.6rem;
@@ -48,22 +45,22 @@
     }
 }
 
-.footer .socialLinks {
-    @include flexHor;
-    list-style: none;
-    justify-content: space-between;
-    padding: 0;
-    width: 20rem;
+// .footer .socialLinks {
+//     @include flexHor;
+//     list-style: none;
+//     justify-content: space-between;
+//     padding: 0;
+//     width: 20rem;
     
-    li {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        font-size: 3rem;
-    }
+//     li {
+//         margin-top: 3rem;
+//         margin-bottom: 3rem;
+//         font-size: 3rem;
+//     }
 
-    @include media(">phone", "<=tablet") {
-        display: none;
-    }
-}
+//     @include media(">phone", "<=tablet") {
+//         display: none;
+//     }
+// }
 
 
