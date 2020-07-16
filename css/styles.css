@@ -6,8 +6,8 @@
 
 .burger-menu__button {
   position: absolute;
-  top: 20px;
-  top: 2rem;
+  top: 18px;
+  top: 1.8rem;
   right: 0px;
   right: 0rem;
   z-index: 30;
@@ -491,8 +491,7 @@ body {
   color: #ffffff;
   margin: 0;
   padding: 0;
-  font-size: 17px;
-  overflow-x: hidden; }
+  font-size: 17px; }
 
 a {
   text-decoration: none;
@@ -515,8 +514,6 @@ a {
   font-family: "Nunito Sans", sans-serif;
   margin-bottom: 5px;
   margin-bottom: 0.5rem; }
-  .hire-button:hover {
-    background-color: #e51d46; }
 
 .nav-wrapper {
   background-color: #030724;
@@ -1317,8 +1314,6 @@ a {
       -webkit-box-flex: 1;
       -ms-flex: 1 2 auto;
       flex: 1 2 auto; }
-    .mobileProjects--projectBox__buttons a:hover {
-      background-color: #e51d46; }
 
 .mobileProjects--projectBox__stack img {
   display: block;
@@ -1339,6 +1334,12 @@ a {
   @media (min-width: 1021px) {
     .mobileProjects--projectBox__stack img {
       margin: 0rem 2rem; } }
+
+.redBtn {
+  background-color: #e51d46 !important; }
+
+.hoverWhite:hover {
+  border: 2px solid white; }
 
 .contact {
   min-height: 600px;

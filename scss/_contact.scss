@@ -1,9 +1,5 @@
 .contact {
     min-height: 60rem;
-
-    // .wrapper {
-    //     width: 82%;
-    // }
 }
 
 .contact .projects--title {
@@ -35,10 +31,6 @@
 
 
 @include media(">phone", "<=tablet") {
-    // .contact .projects--title {
-    //     margin-top: 7rem;
-    // }
-
     .contact .projects--title h2{
         margin-bottom: 5rem;
     }
@@ -62,13 +54,9 @@
 
 .contact--container {
     @include flexHor;
-    // @include bor;
-    // width: 100%;
 
     .contact--container__left {
-        // @include bor;
         flex: 1 0 40%;
-        // height: 100%;
         align-self: center;
         position: relative;
 
@@ -78,10 +66,7 @@
     }
 
     .contact--container__right {
-        // @include bor;
         flex: 1 0 50%;
-        // width: 100%;
-
 
         h3 {
             font-family: $heading-font;
@@ -102,7 +87,6 @@
     width: 3rem;
     height: 3rem;
     img {
-        // display: block;
         width: 100%;
         animation: spin 15s linear infinite;
         @keyframes spin {
@@ -140,15 +124,12 @@
     width: 100%;
 
     input[type="text"] {
-        // flex: 1 0 45%;
-        // height: 20rem;
         width: 100%;
         margin-bottom: 1rem;
         height: 4rem;
     }
 
     textarea {
-        // flex: 1 0 90%;
         width: 100%;
         height: 10rem;
     }
