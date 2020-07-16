@@ -56,9 +56,6 @@ body {
     margin: 0;
     padding: 0;
     font-size: 17px;
-    overflow-x: hidden;
-    // overflow-y: hidden;
-    // overflow: auto;
 }
 
 a {
@@ -75,10 +72,6 @@ a {
 .hire-button {
     @include button;
     margin-bottom: 0.5rem;
-    
-    &:hover {
-        background-color: $red;
-    } 
 }
 
 // nav bar styles
@@ -125,7 +118,6 @@ a {
         justify-content: space-between;
         
         .header--nav__a {
-            // justify-self: right;
             margin-left: 2rem;
             text-transform: uppercase;
             border: 2px solid transparent;
@@ -187,8 +179,6 @@ a {
 .decor-triangle {
     top: 1rem;
     left: 2rem;
-    // top: 13rem;
-    // left: 40px;
     width: 3rem;
     animation: spin 15s linear infinite;
     @keyframes spin {
@@ -265,22 +255,6 @@ a {
 
 }
 
-
-// .decor-circleRight {
-//     position: absolute;
-//     bottom: -5rem;
-//     right: 2rem;
-//     width: 4rem;
-//     animation: spin 10s linear infinite;
-//     spin {
-//         100% {rotate: (360deg);};
-//     };
-
-//     @include media(">phone", "<=tablet") {
-//         bottom: 5rem;
-//         right: 0rem;
-//     };
-// }
 
 .iAmNikita {
     display: flex;
