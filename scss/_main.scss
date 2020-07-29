@@ -163,7 +163,9 @@ a {
     border-radius: 5px;
 
     @include media(">=phone", "<=tablet") {
-        width: 100%;
+        max-width: 380px;
+        width: 80%;
+        margin-bottom: 8rem;
     }
 }
 

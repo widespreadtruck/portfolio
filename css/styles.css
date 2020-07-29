@@ -594,7 +594,9 @@ a {
 
 @media (min-width: 320px) and (max-width: 1020px) {
   .container-right .nikitaImg {
-    width: 100%; } }
+    max-width: 380px;
+    width: 80%;
+    margin-bottom: 8rem; } }
 
 .decor-triangle,
 .decor-circle,
@@ -1296,7 +1298,8 @@ a {
       border-radius: 5px;
       border: 2px solid #e51d46;
       background-color: transparent;
-      color: white;
+      color: whitesmoke;
+      font-weight: 600;
       font-family: "Nunito Sans", sans-serif;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1339,7 +1342,11 @@ a {
   background-color: #e51d46 !important; }
 
 .hoverWhite:hover {
-  border: 2px solid white; }
+  border: 2px solid white;
+  color: whitesmoke !important; }
+
+.redFont {
+  color: #e51d46 !important; }
 
 .contact {
   min-height: 600px;
