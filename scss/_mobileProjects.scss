@@ -103,7 +103,8 @@
             border-radius: 5px;
             border: 2px solid $red;
             background-color: transparent;
-            color: white;
+            color: whitesmoke;
+            font-weight: 600;
             font-family: $body-font;
             @include flexHor;
             flex: 1 2 auto;
@@ -133,11 +134,15 @@
 
 .redBtn {
     background-color: $red !important;
-
 }
 
 .hoverWhite {
     &:hover {
         border: 2px solid white;
+        color: whitesmoke !important;
     }
+}
+
+.redFont {
+    color: $red !important;
 }
