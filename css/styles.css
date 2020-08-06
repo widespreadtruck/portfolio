@@ -774,7 +774,7 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 290px; }
+  width: 190px; }
   .iAmNikita .socialLinks li a {
     width: 40px;
     width: 4rem;
@@ -1209,8 +1209,8 @@ a {
 
 .mobileProjects--projectBox {
   max-width: 900px;
-  margin-bottom: 80px;
-  margin-bottom: 8rem; }
+  margin-bottom: 120px;
+  margin-bottom: 12rem; }
   .mobileProjects--projectBox__imageBox {
     margin: 0 auto;
     display: -webkit-box;
@@ -1236,7 +1236,9 @@ a {
     font-size: 32px;
     font-size: 3.2rem;
     margin-bottom: 20px;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    padding-top: 20px;
+    padding-top: 2rem; }
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .mobileProjects--projectBox__projectName h3 {
@@ -1245,14 +1247,19 @@ a {
     text-align: left;
     font-size: 25px;
     font-size: 2.5rem;
-    margin-bottom: 20px;
-    margin-bottom: 2rem;
+    margin-bottom: 40px;
+    margin-bottom: 4rem;
     line-height: 150%; }
     .mobileProjects--projectBox__description p {
       margin-bottom: 20px;
       margin-bottom: 2rem; }
     .mobileProjects--projectBox__description h4 {
-      text-align: center; }
+      text-align: center;
+      padding-top: 30px;
+      padding-top: 3rem; }
+    .mobileProjects--projectBox__description ul {
+      padding-left: 30px;
+      padding-left: 3rem; }
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .mobileProjects--projectBox__description {
@@ -1271,8 +1278,8 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 20px;
-    margin-bottom: 2rem; }
+    margin-bottom: 40px;
+    margin-bottom: 4rem; }
   .mobileProjects--projectBox__buttons {
     display: -webkit-box;
     display: -ms-flexbox;
