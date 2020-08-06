@@ -46,7 +46,7 @@
 
 .mobileProjects--projectBox {
     max-width: 900px;
-    margin-bottom: 8rem;
+    margin-bottom: 12rem;
 
     &__imageBox {
         margin: 0 auto;
@@ -56,6 +56,7 @@
         img {
             display: block;
             width: 100%;
+            // filter: drop-shadow(1px 5px 5px grey);
         }
     }
 
@@ -63,6 +64,7 @@
         text-align: center;
         font-size: 3.2rem;
         margin-bottom: 2rem;
+        padding-top: 2rem;
 
         @include media(">phone", "<=tablet") {
             font-size: 2.3rem;
@@ -72,7 +74,7 @@
     &__description {
         text-align: left;
         font-size: 2.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
         line-height: 150%;
 
         p {
@@ -80,6 +82,10 @@
         }
         h4 {
             text-align: center;
+            padding-top: 3rem;
+        }
+        ul {
+            padding-left: 3rem;
         }
 
         @include media(">phone", "<=tablet") {
@@ -89,7 +95,7 @@
 
     &__stack {
         @include flexHor;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
 
     &__buttons {
