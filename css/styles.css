@@ -483,7 +483,7 @@ template {
 html {
   font-size: 62.5%;
   font-family: "Nunito Sans", sans-serif;
-  background-color: #030724;
+  background-color: #0c0c0c;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility; }
 
@@ -508,7 +508,7 @@ a {
   height: 40px;
   height: 4rem;
   border-radius: 5px;
-  border: 2px solid #e51d46;
+  border: 2px solid #6440EC;
   background-color: transparent;
   color: white;
   font-family: "Nunito Sans", sans-serif;
@@ -516,7 +516,7 @@ a {
   margin-bottom: 0.5rem; }
 
 .nav-wrapper {
-  background-color: #030724;
+  background-color: #0c0c0c;
   position: fixed;
   width: 100%;
   height: 120px;
@@ -565,7 +565,7 @@ a {
 
 .header--nav__a:hover,
 .header--nav__a:active {
-  border-bottom: 2px solid #e51d46 !important;
+  border-bottom: 2px solid #6440EC !important;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease; }
 
@@ -573,7 +573,7 @@ a {
   z-index: -1;
   margin-top: 120px;
   margin-top: 12rem;
-  background-color: #030724; }
+  background-color: #0c0c0c; }
   .header-content .header-content__container {
     display: -ms-grid;
     display: grid;
@@ -830,7 +830,7 @@ a {
     display: none !important; } }
 
 .about {
-  background-color: #050A30;
+  background-color: #0c0c0c;
   min-height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -862,7 +862,7 @@ a {
     position: absolute;
     width: 50px;
     width: 5rem;
-    border-bottom: 3px solid #e51d46;
+    border-bottom: 3px solid #6440EC;
     top: 0px;
     top: 0rem;
     left: calc(50% - 2.5rem); }
@@ -970,7 +970,7 @@ a {
     position: absolute;
     width: 50px;
     width: 5rem;
-    border-bottom: 3px solid #e51d46;
+    border-bottom: 3px solid #6440EC;
     top: 0px;
     top: 0rem;
     left: calc(50% - 2.5rem); }
@@ -1147,7 +1147,7 @@ a {
 
 .mobileProjects {
   min-height: 600px;
-  background-color: #050A30; }
+  background-color: #0c0c0c; }
   .mobileProjects .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1175,7 +1175,7 @@ a {
     position: absolute;
     width: 50px;
     width: 5rem;
-    border-bottom: 3px solid #e51d46;
+    border-bottom: 3px solid #6440EC;
     top: 0px;
     top: 0rem;
     left: calc(50% - 2.5rem); }
@@ -1305,7 +1305,7 @@ a {
       height: 60px;
       height: 6rem;
       border-radius: 5px;
-      border: 2px solid #e51d46;
+      border: 2px solid #6440EC;
       background-color: transparent;
       color: whitesmoke;
       font-weight: 600;
@@ -1351,14 +1351,14 @@ a {
       margin: 0rem 2rem; } }
 
 .redBtn {
-  background-color: #e51d46 !important; }
+  background-color: #6440EC !important; }
 
 .hoverWhite:hover {
   border: 2px solid white;
   color: whitesmoke !important; }
 
 .redFont {
-  color: #e51d46 !important; }
+  color: #6440EC !important; }
 
 .contact {
   min-height: 600px;
@@ -1373,7 +1373,7 @@ a {
     position: absolute;
     width: 50px;
     width: 5rem;
-    border-bottom: 3px solid #e51d46;
+    border-bottom: 3px solid #6440EC;
     top: 0px;
     top: 0rem;
     left: calc(50% - 2.5rem); }
@@ -1475,7 +1475,7 @@ a {
     bottom: 5px;
     bottom: 0.5rem;
     right: 0;
-    border-bottom: 13px solid #e51d46;
+    border-bottom: 13px solid #6440EC;
     width: 100%;
     z-index: -1; }
 
@@ -1523,7 +1523,7 @@ a {
   border-bottom: 1px solid #7f7c99; }
   .contact--formBox input[type="text"]:hover,
   .contact--formBox textarea:hover {
-    border-bottom: 1px solid #e51d46; }
+    border-bottom: 1px solid #6440EC; }
 
 .submit {
   width: 150px;
@@ -1531,7 +1531,7 @@ a {
   height: 40px;
   height: 4rem;
   border-radius: 5px;
-  border: 2px solid #e51d46;
+  border: 2px solid #6440EC;
   background-color: transparent;
   color: white;
   font-family: "Nunito Sans", sans-serif;
@@ -1542,7 +1542,7 @@ a {
   margin-bottom: 100px;
   margin-bottom: 10rem; }
   .submit:hover {
-    background-color: #e51d46;
+    background-color: #6440EC;
     color: white; }
 
 .footer {

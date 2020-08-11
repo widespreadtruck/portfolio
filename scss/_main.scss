@@ -26,10 +26,14 @@
     font-family: $body-font;
 }
 
-$header-bg: #030724;
+$header-bg: rgb(12, 12, 12);
+// $header-bg: #030724;
 $font-clr: #ffffff;
-$second-bg: #050A30;
-$red: #e51d46;
+$second-bg: rgb(12, 12, 12);
+// $second-bg: #050A30;
+$red: #6440EC;
+// $red: rgb(133, 38, 133);
+// $red: #e51d46;
 
 $heading-font: "Playfair Display", serif;
 $body-font: "Nunito Sans", sans-serif;
