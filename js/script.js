@@ -27,7 +27,7 @@ $(function() {
 
     // typed.js
     const typed = new Typed('#typed', {
-        strings: ["Junior Developer", "Finance Background", "Book Nerd", "Dog Lover", "Forever Student"],
+        strings: ["Frontend Web Developer", "With FinTech experience"],
         typeSpeed: 70,
         backSpeed: 20,
         backDelay: 2000,

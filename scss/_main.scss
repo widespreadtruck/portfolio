@@ -18,7 +18,7 @@
 
 @mixin button {
     width: 15rem;
-    height: 4rem;
+    height: 6rem;
     border-radius: 5px;
     border: 2px solid $red;
     background-color: transparent;
@@ -31,7 +31,7 @@ $header-bg: rgb(12, 12, 12);
 $font-clr: #ffffff;
 $second-bg: rgb(12, 12, 12);
 // $second-bg: #050A30;
-$red: #6440EC;
+$red: rgb(100, 64, 236);
 // $red: rgb(133, 38, 133);
 // $red: #e51d46;
 
@@ -76,6 +76,13 @@ a {
 .hire-button {
     @include button;
     margin-bottom: 0.5rem;
+    cursor: pointer;
+    background-color: rgba(100, 64, 236, 0.8);
+    &:hover {
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 5px 15px rgba(100, 64, 236, 1);
+        background-color: rgba(100, 64, 236, 1);
+    }
 }
 
 // nav bar styles
