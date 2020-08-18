@@ -32,10 +32,10 @@
         margin: 0 auto;
         margin-bottom: 5rem;
         margin-top: 1rem;
-
+        letter-spacing: 5px;
         @include media(">phone", "<=tablet") {
             font-size: 4rem;
-            margin-bottom: 2.5rem;
+            margin-bottom: 4rem;
         }
     }
 }
@@ -51,6 +51,7 @@
     @include media(">phone", "<=tablet") {
         flex-direction: column;
         margin-bottom: 5rem;
+        max-width: 600px;
     }
 
     .skillList-left {
@@ -112,7 +113,7 @@
         margin-bottom: 5rem;
 
         @include media(">phone", "<=tablet") {
-            margin-bottom: 5rem;
+            margin-bottom: 3rem;
         }
     }
 
@@ -135,8 +136,8 @@
 .skillList-left li img {
     width: 100%;
     display: block;
-    width: 13rem;
-    height: 13rem;
+    width: 10rem;
+    height: 10rem;
 
     @include media(">phone", "<=tablet") {
         width: 8rem;
