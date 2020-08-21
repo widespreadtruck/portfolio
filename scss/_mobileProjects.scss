@@ -1,5 +1,5 @@
 .mobileProjects {
-    min-height: 600px;
+    // min-height: 600px;
     background-color: $second-bg;
     
     .wrapper {
@@ -25,15 +25,7 @@
     }
     
     h2 {
-        text-align: center;
-        font-size: 6rem;
-        font-family: $heading-font;
-        margin: 0 auto;
-        margin: 1rem 0 8rem 0;
-        letter-spacing: 5px;
-        @include media("<tablet"){            
-            font-size: 4rem;
-        }
+        @include sectionHeaderStyles;
     }
 }
 
@@ -106,6 +98,7 @@
 
         a:first-child {
             margin-right: 2rem;
+            border: 2px solid transparent;
         }
         a {
             display: inline-block;
@@ -171,6 +164,8 @@
     }
 }
 
-// .redFont {
-//     color: $red !important;
-// }
+.pushEffect {
+    &:active {
+        padding-top: 3px;
+    }
+}

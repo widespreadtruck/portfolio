@@ -1,12 +1,17 @@
 .about {
     background-color: $second-bg;
-    min-height: 600px;
+    // min-height: 600px;
     @include flexVer;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 82%;
 }   
 
 .about--title {
     position: relative;
-    margin-top: 10rem;
+    margin-top: 12rem;
+    margin: 0 auto;
 
     @include media(">phone", "<=tablet") {
         flex-direction: column;
@@ -22,65 +27,41 @@
     }
 
     h2 {
-        font-size: 6rem;
-        font-family: $heading-font;
-        margin: 0 auto;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        letter-spacing: 5px;
-
-        @include media(">phone", "<=tablet") {
-            font-size: 4rem;
-            margin-bottom: 0rem;
-        }
+        @include sectionHeaderStyles;
     }
-
-    .decor-circleRight {
-        display: none;
-        position: absolute;
-        top: -5vw;
-        right: -30vw;
-        width: 4rem;
-        animation: spin 10s linear infinite;
-        spin {
-            100% {rotate: (360deg);};
-        };
-
-        @include media(">phone", "<=tablet") {
-            top: -6vw;
-            right: -25vw;
-        };
-    };
 }
 
-
-.aboutMeText.wrapper{
-    margin: 0;
-    padding: 0;
-    font-size: 3.6rem;
+.about {
+    font-size: $pFontSize;
     line-height: 150%;
-    margin-top: 4rem;
-    margin-bottom: 8rem;
-    font-weight: 400;
 
-    @include media(">phone", "<=tablet") {
-    font-size: 2.6rem;
-    line-height: 3.8rem;
+    p {
+        font-weight: 400;
+        margin-bottom: 3rem;
+
+        a {
+            text-decoration: underline;
+            color: cornflowerblue;
+        }
     }
 
+    h3 {
+        margin-bottom: 2rem;
+    }
 
-    .underline {
-        position: relative;
-        
-        &::after {
-            content: "";
-            width: 100%;
-            position: absolute;
-            display: inline-block;
-            border-bottom: 2px solid red;
-            bottom: 0.5rem;
-            left: 0;
+    ul {
+        list-style: none;
+        margin-bottom: 12rem;
+
+        @include media(">phone", "<=tablet") {
+            margin-bottom: 6rem;
         }
+
+    }
+
+    @include media(">phone", "<=tablet") {
+        font-size: 2rem;
+        line-height: 150%;
     }
 }
 

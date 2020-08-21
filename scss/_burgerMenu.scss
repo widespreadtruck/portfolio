@@ -68,13 +68,13 @@
     display: flex;
     flex-flow: column;
     height: 100%;
-    background-color: #1c1e57;
+    background-color: rgba(100, 64, 236, 0.95);
     overflow-y: auto;
     left: -100vw;
     transition: 0.4s ease;
 
     a {
-        font-family: "Playfair Display", serif;
+        font-family: "Khula", sans-serif;
     }
 }
 

@@ -1,5 +1,5 @@
 .stackSection {
-    min-height: 600px;
+    // min-height: 600px;
 
     .wrapper {
         display: flex;
@@ -11,7 +11,7 @@
 
 .stackSection--title {
     position: relative;
-    margin-top: 10rem;
+    // margin-top: 10rem;
 
     @include media(">phone", "<=tablet") {
         flex-direction: column;
@@ -27,16 +27,7 @@
     }
 
     h2 {
-        font-size: 6rem;
-        font-family: $heading-font;
-        margin: 0 auto;
-        margin-bottom: 5rem;
-        margin-top: 1rem;
-        letter-spacing: 5px;
-        @include media(">phone", "<=tablet") {
-            font-size: 4rem;
-            margin-bottom: 4rem;
-        }
+        @include sectionHeaderStyles;
     }
 }
 
@@ -78,7 +69,7 @@
         }
 
         li p {
-            font-size: 3rem;
+            font-size: 2rem;
             margin: 0 auto;
             margin-top: 1rem;
             text-align: center;
@@ -102,7 +93,7 @@
         @include media(">phone", "<=tablet") {
             padding: 0;
             justify-content: space-around;
-                    padding-right: 0rem;
+            padding-right: 0rem;
         }
     }
     
@@ -110,7 +101,7 @@
     .skillList-secondRow,
     .skillList-thirdRow,
     .skillList-fourthRow {
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
 
         @include media(">phone", "<=tablet") {
             margin-bottom: 3rem;
@@ -124,7 +115,7 @@
 
         img {
             display: block;
-            width: 100%;
+            width: 80%;
         }
 
         @include media(">phone", "<=tablet") {
@@ -136,12 +127,12 @@
 .skillList-left li img {
     width: 100%;
     display: block;
-    width: 10rem;
-    height: 10rem;
+    width: 6rem;
+    height: 6rem;
 
     @include media(">phone", "<=tablet") {
-        width: 8rem;
-        height: 8rem;
+        width: 5rem;
+        height: 5rem;
     }
 }
 
