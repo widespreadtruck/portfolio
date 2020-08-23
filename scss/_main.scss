@@ -1,3 +1,16 @@
+$header-bg: rgb(12, 12, 12);
+$font-clr-08: rgba(245, 245, 245, 0.8);
+$font-clr-1: rgba(245, 245, 245, 1);
+$second-bg: rgb(12, 12, 12);
+$red: rgba(100, 64, 236, 0.8);
+$red1: rgba(100, 64, 236, 1);
+$headerSize: 5rem;
+$pFontSize: 2.6rem;
+$headerWeight: 400;
+$heading-font: "Khula", sans-serif;
+$body-font: "Nunito Sans", sans-serif;
+$wrapper-width: 82%;
+
 @mixin bor {
     border: 1px solid red
 }
@@ -22,23 +35,10 @@
     border-radius: 5px;
     border: 2px solid transparent;
     background-color: transparent;
-    color: rgba(245, 245, 245, 0.8);
+    color: $font-clr-1;
     font-family: $body-font;
 }
 
-$header-bg: rgb(12, 12, 12);
-$font-clr-08: rgba(245, 245, 245, 0.8);
-$font-clr-1: rgba(245, 245, 245, 1);
-$second-bg: rgb(12, 12, 12);
-$red: rgba(100, 64, 236, 0.8);
-$red1: rgba(100, 64, 236, 1);
-$headerSize: 5rem;
-$pFontSize: 2.6rem;
-$headerWeight: 400;
-$heading-font: "Khula", sans-serif;
-$body-font: "Nunito Sans", sans-serif;
-
-$wrapper-width: 82%;
 
 @mixin sectionHeaderStyles {
     text-align: center;
@@ -97,13 +97,13 @@ a {
     height: 50px !important;
     cursor: pointer;
 
+    a {
+        color: $font-clr-1;
+    }
+    
     &:hover {
-        box-shadow: 0px 0px 15px rgba(100, 64, 236, 1);
-        background-color: rgba(100, 64, 236, 1);
-
-        a {
-            color: $font-clr-1;
-        }
+        box-shadow: 0px 0px 15px $red1;
+        background-color: $red1;
     }
 
     @include media(">phone", "<=tablet") {
@@ -293,7 +293,7 @@ a {
     margin-bottom: 0;
     padding-left: 0;
     justify-content: space-between;
-    width: 190px;
+    width: 235px;
     
     li {
         a {

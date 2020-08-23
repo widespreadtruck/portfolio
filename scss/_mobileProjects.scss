@@ -166,6 +166,7 @@
 
 .pushEffect {
     &:active {
-        padding-top: 3px;
+        transform: translateY(2px) !important;
+        transition: none !important;
     }
 }
