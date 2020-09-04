@@ -660,15 +660,15 @@ a {
   margin: auto;
   z-index: 3;
   position: relative;
-  padding-top: 90px;
-  padding-top: 9rem; }
+  padding-top: 40px;
+  padding-top: 4rem; }
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .iAmNikita {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 5rem; } }
+    padding-top: 3rem; } }
   .iAmNikita .Iam {
     font-size: 110px;
     font-weight: 700;
@@ -687,8 +687,6 @@ a {
     letter-spacing: 5px;
     padding-right: 40px;
     padding-right: 4rem; }
-    .iAmNikita .name__emodji {
-      white-space: nowrap; }
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .iAmNikita .name {
@@ -729,7 +727,7 @@ a {
   .socialLinks li a {
     width: 40px;
     width: 4rem;
-    color: rgba(255, 255, 255, .8);
+    color: rgba(245, 245, 245, .8);
     font-size: 40px;
     font-size: 4rem; }
 
@@ -747,10 +745,11 @@ a {
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .iAmNikita .socialLinks {
-    margin-bottom: 12rem; } }
+    margin-bottom: 12rem;
+    margin-top: 2rem; } }
 
 .hoverGlow:hover {
-  color: white; }
+  color: whitesmoke; }
 
 @media (min-width: 321px) and (max-width: 1020px) {
   .header-content__container {
@@ -789,6 +788,9 @@ a {
 @media (min-width: 321px) and (max-width: 1020px) {
   .header-navig {
     display: none !important; } }
+
+.holdTogether {
+  white-space: nowrap; }
 
 .about {
   background-color: #0c0c0c;
