@@ -25,21 +25,21 @@
             <div class="wrapper">
                 <nav class="header--nav">
                     <div class="header-hire">
-                        <button tabindex="0" class="hire-button"><a href="https://nikitaguliaev.com/Nikita_Guliaev_Web_Developer.pdf" download="Nikita Guliaev - Web Dev Resume" target="_blank" rel="noopener noreferrer">Download CV</a></button>
+                        <button aria-label="Download CV" tabindex="0" class="hire-button pushEffect"><a href="https://nikitaguliaev.com/Nikita_Guliaev_Web_Developer.pdf" download="Nikita_Guliaev_Web_Developer_Resume" target="_blank" rel="noopener noreferrer">Download CV</a></button>
                     </div>
                     <!-- burger menu STARTS-->
 
                     <div class="burger-menu">
-                        <a href="#" class="burger-menu__button">
+                        <a aria-label="Menu" tabindex="0" href="#" class="burger-menu__button">
                             <span class="burger-menu__lines"></span>
                         </a>
                     
                         <nav class="burger-menu__nav">
-                            <a href="#home" class="burger-menu__link">Home</a>
-                            <a href="#about" class="burger-menu__link">About</a>
-                            <a href="#stack" class="burger-menu__link">Stack</a>
-                            <a href="#projects" class="burger-menu__link">Projects</a>
-                            <a href="#contact" class="burger-menu__link">Contact</a>
+                            <a tabindex="0" href="#home" class="burger-menu__link">Home🏡</a>
+                            <a tabindex="0" href="#about" class="burger-menu__link">About🔎</a>
+                            <a tabindex="0" href="#stack" class="burger-menu__link">Stack📚</a>
+                            <a tabindex="0" href="#projects" class="burger-menu__link">Projects✅</a>
+                            <a tabindex="0" href="#contact" class="burger-menu__link">Contact📬</a>
                         </nav>
                         <div class="burger-menu__overlay"></div>
                     </div>
@@ -61,18 +61,16 @@
                 <div class="header-content__container">
                     <div class="container-left">
                         <div class="iAmNikita">
-                            <img class="decor-triangle" src="./assets/3.png" alt="spinning triangle illustration">
-                            <img class="decor-circle" src="./assets/1.png" alt="circle">
-                            <img class="decor-dotsLeft" src="./assets/4.png" alt="jumping up and down dots illustration">
-
-                            <h2 tabindex="0" class="Iam">I Am</h2>
-                            <h1 tabindex="0" class="name">Nikita Guliaev👨‍💻</h1>
+                            <h1 class="Iam">I Am</h1>
+                            <h1 class="name">Nikita Guliaev <<span class="holdTogether">/👨‍💻></span></h1>
                             <!-- JS typed text goes here -->
-                            <h3 tabindex="0" class="frontEnd" id="typed"></h3>
-                            <ul tabindex="0" class="socialLinks">
-                                <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/nikita_guliaev"><i class="fab fa-twitter-square hoverGlow"></i></a></li>
-                                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/widespreadtruck"><i class="fab fa-github-square hoverGlow"></i></a></li>
-                                <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nikita-guliaev-ma-808aab8a/"><i class="fab fa-linkedin hoverGlow"></i></a></li>
+                            <h3 class="frontEnd" id="typed"></h3>
+                            <ul class="socialLinks">
+                                <li><a tabindex="0" target="_blank" rel="noopener noreferrer" href="https://twitter.com/nikita_guliaev"><i  class="fab fa-twitter-square hoverGlow"></i></a></li>
+                                <li><a tabindex="0" target="_blank" rel="noopener noreferrer" href="https://github.com/widespreadtruck"><i  class="fab fa-github-square hoverGlow"></i></a></li>
+                                <li><a tabindex="0" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nikita-guliaev-ma-808aab8a/"><i  class="fab fa-linkedin hoverGlow"></i></a></li>
+                                <li><a tabindex="0" target="_blank" rel="noopener noreferrer" href="https://dev.to/nikita_guliaev"><i  class="fab fa-dev hoverGlow"></i></a></li>
+                                <li><a tabindex="0" target="_blank" rel="noopener noreferrer" href="mailto:hello@nikitaguliaev.com"><i class="fas fa-envelope-square hoverGlow"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -86,72 +84,73 @@
     <main>
         <section class="about" id="about">
             <div class="about--title">
-                <div data-aos="fade-up" data-aos-easing="ease-in-out" class="redLine"></div>
-                <h2 data-aos="fade-up" data-aos-easing="ease-in-out" tabindex="0">About 🔎</h2>
-                <img data-aos="fade-up" class="decor-circleRight" src="./assets/5.png" alt="spinning circle illustration">
+                <div class="redLine"></div>
+                <h2>About 🔎</h2>
             </div>
-            <h3 data-aos="fade-up" tabindex="0" class="aboutMeText wrapper">I am a reliable, curious, and passionate <span class="webDev">Front-End Web Developer</span> with a strong Financial Intelligence & Stock Trading background. Having worked for and at <span class="rbc">RBC</span>, <span class="bns">Scotiabank</span> and <span class="td">TD</span>, I’m
-            bringing 4 years of banking and consulting experience. Having been on the client side
-            (<span class="webDev">Product Owner</span> on a large Agile project), I discovered a passion for coding and went back to school to learn Front-End Web Development. My <span class="webDev">Superpower</span> is a “I don’t know everything, but I can learn anything” attitude. Now I’d love to put my Tech
-            and Finance skills to work for your company.
-            </h3>
-            <!-- <h3 class="aboutMeText wrapper">Some facts about me:</h3>
-            <ul class="aboutMeText wrapper">
-                <ul>- Worked for and at <span class="rbc">RBC</span>, <span class="bns">Scotiabank</span> and <span class="td">TD</span></ul>
-                <ul></ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul> -->
+            <p data-aos="fade-up" class="about__p1">I am a reliable, curious, and enthusiastic <span class="webDev">Front-End Web Developer</span> with 4 years of prior experience in Financial Compliance & Stock Trading. Having worked for and at <span class="rbc">RBC</span>, <span class="bns">Scotiabank</span> and <span class="td">TD</span>, I’m bringing 4 years of banking and consulting experience. In the beginning of 2020 I graduated from Juno College’s Web Development program and have since been freelancing & working on my own projects. Currently I'm looking for the next challenge.
+            </p>
+
+            <p data-aos="fade-up">My coding journey began when I saved <span class="webDev">$300,000</span> at Scotiabank by self-teaching myself Excel VBA and developing an Excel Macro, which subsequently was implemented department-wide and used by 100+ AML Analysts. This is when I realized I wanted to improve people's lives by developing software.</p>
+                
+            <p data-aos="fade-up">During my compliance career I have been a <span class="webDev">Product Owner</span> on a large <span class="webDev">Agile</span> project aimed to customize and implement the Oracle Financial Crime and Compliance Management (FCCM) software. I also performed Quality Assurance functions & trained dozens of AML Analysts. My specialty was conducting end-to-end financial crime investigations & filing complex reports with FINTRAC. I was enjoying myself in those roles, but my passion for coding took over.</p>
+
+            <p data-aos="fade-up">Currently I'm expanding my tech stack. At the moment I'm taking a <a href="https://www.udemy.com/course/react-redux/" target="_blank" rel="noopener noreferrer">React/Redux</a> course on Udemy as well as reading the <a href="https://eloquentjavascript.net/" target="_blank" rel="noopener noreferrer">Eloquent JavaScript</a> textbook. My next step will be taking a 2 month Full-Stack course at the <a href="https://junocollege.com/course/full-stack-masterclass" target="_blank" rel="noopener noreferrer">Juno College of Technology</a> with the goal to expand my knowledge of Node.js, Express.js, and MongoDB.</p>
+                
+            <h3 data-aos="fade-up">Some quick facts about me:</h3>
+            <ul>
+                <li data-aos="fade-up">✅ I climbed the highest peak in Europe - Mount <span class="holdTogether">Elbrus🏔</span></li>
+                <li data-aos="fade-up">✅ I hold a Master's Degree in Economics and passed level 2 of CFA</li>
+                <li data-aos="fade-up">✅ I'm a furious reader and like to read 3 books simultaneously</li>
+                <li data-aos="fade-up">✅ I derive a great pleasure from solving Rubic's Cubes</li>
+            </ul>
         </section>
         <section class="stackSection" id="stack" data-aos="fade-up" data-aos-easing="ease-in-out">
             <div class="wrapper">
                 <div class="stackSection--title">
                     <div class="redLine"></div>
-                    <h2 tabindex="0">My Stack 📚</h2>
+                    <h2>My Stack 📚</h2>
                 </div>
                 <div class="stackSection--container">
                     <ul class="skillList-left">
                         <div data-aos="fade-up" class="skillList-firstRow">
-                            <li tabindex="0">
+                            <li>
                                 <img src="./assets//skillz/1.png" alt="react logo" aria-label="react logo">
                                 <p>React</p>
                             </li>
-                            <li tabindex="0">
+                            <li>
                                 <img src="./assets//skillz/17.png" alt="redux logo" aria-label="redux logo">
                                 <p>Redux</p>
                             </li>
-                            <li tabindex="0">
+                            <li>
                                 <img src="./assets//skillz/2.png" alt="react logo" aria-label="JavaScript logo">
                                 <p>JavaScript</p>
                             </li>
                         </div>
                         <div data-aos="fade-up" class="skillList-secondRow">
-                            <li tabindex="0">
+                            <li>
                                 <img src="./assets//skillz/9.png" alt="react logo" aria-label="HTML5 logo">
                                 <p>HTML5</p>
                             </li>
-                            <li tabindex="0">
+                            <li>
                                 <img src="./assets//skillz/10.png" alt="react logo" aria-label="CSS3 logo">
                                 <p>CSS3</p>
                             </li>
-                            <li tabindex="0">
+                            <li>
                                 <img src="./assets//skillz/8.png" alt="react logo" aria-label="SASS logo">
                                 <p>SASS</p>
                             </li>
 
                         </div>
                         <div data-aos="fade-up" class="skillList-thirdRow">
-                            <li tabindex="0">
+                            <li>
                                 <img src="./assets//skillz/7.png" alt="react logo" aria-label="GitHub logo">
                                 <p>GitHub</p>
                             </li>
-                            <li tabindex="0">
+                            <li>
                                 <img src="./assets//skillz/3.png" alt="react logo" aria-label="Firebase logo">
                                 <p>Firebase</p>
                             </li>
-                            <li tabindex="0">
+                            <li>
                                 <img src="./assets//skillz/4.png" alt="react logo" aria-label="jQuery logo">
                                 <p>jQuery</p>
                             </li>
@@ -161,32 +160,32 @@
                             </li>                         -->
                         </div>
                         <div data-aos="fade-up" class="skillList-fourthRow">
-                            <li tabindex="0">
+                            <li>
                                 <img src="./assets//skillz/11.png" alt="react logo" aria-label="Terminal logo">
                                 <p>Terminal</p>
                             </li>
-                            <li tabindex="0">
+                            <li>
                                 <img src="./assets//skillz/6.png" alt="react logo" aria-label="Git logo">
                                 <p>Git</p>
                             </li>
-                            <li tabindex="0">
+                            <li>
                                 <img src="./assets//skillz/12.png" alt="react logo" aria-label="REST API logo">
                                 <p>REST API's</p>
-                            </li tabindex="0">
+                            </li>
                         </div>
                         <div data-aos="fade-up" class="skillList-fifthRow">
-                            <li tabindex="0">
+                            <li>
                                 <img src="./assets//skillz/13.png" alt="react logo" aria-label="Styled Components logo">
                                 <p>Styled Components</p>
                             </li>
-                            <li tabindex="0">
+                            <li>
                                 <img src="./assets//skillz/14.png" alt="react logo" aria-label="Node.js logo">
                                 <p>Node.js</p>
                             </li>
-                            <li tabindex="0">
+                            <li>
                                 <img src="./assets//skillz/15.png" alt="react logo" aria-label="MySQL logo">
                                 <p>MySQL</p>
-                            </li tabindex="0">
+                            </li>
                         </div>
                     </ul>
                     <div class="skillList-right"><img src="./assets/2.png" alt="an illustration of a developer sitting in front of a computer"></div>
@@ -197,46 +196,48 @@
             <div class="wrapper">
                 <div class="mobileProjects--title">
                     <div class="redLine"></div>
-                    <h2 tabindex="0">My Projects ✅</h2>
+                    <h2>My Projects ✅</h2>
                 </div>
 
                 
                 <div class="mobileProjects--containerForAll">
 
-
                     <div class="mobileProjects--projectBox" data-aos="fade-up" data-aos-easing="ease-in-out">
-                        <div tabindex="0" class="mobileProjects--projectBox__imageBox"><img src="./assets/projects/laptopPizza.png"
+                        <div class="mobileProjects--projectBox__imageBox"><img src="./assets/projects/laptopPizza.png"
                                 alt="image of the project on a laptop screen"></div>
-                        <div tabindex="0" class="mobileProjects--projectBox__projectName">
+                        <div class="mobileProjects--projectBox__projectName">
                             <h3>React Online Pizza Store</h3>
                         </div>
-                        <div tabindex="0" class="mobileProjects--projectBox__description">
+                        <div class="mobileProjects--projectBox__description">
                             <p>Built using React.js & Redux. Currently working on adding more functionality. So far the available features include:</p>
                             <ul>
                                 <li>Built with Create-React-App</li>
                                 <li>Redux is used to manage State</li>
                                 <li>JSON-Server used as a back-end</li>
+                                <li>PropTypes used to validate Props</li>
+                                <li>App is fully responsive</li>
+                                <li>Different components render based on screen width</li>
                                 <li>Placeholder Loading animation is used to help users understand that the content is about to load</li>
                                 <li>Content can be filtered by Category</li>
                                 <li>Content can be ordered by Popularity, Price, Alphabet</li>
                                 <li>Pizzas can be added to Cart</li>
                                 <li>Cart can be cleared</li>
                             </ul>
-                            <p>More features are to be added shortly...</p>
+                            <p>Still a work-in-progress. More features are to be added shortly...</p>
                             <h4>Stack used:</h4>
                         </div>
-                        <div tabindex="0" data-aos="zoom-in" class="mobileProjects--projectBox__stack">
+                        <div data-aos="zoom-in" class="mobileProjects--projectBox__stack">
                             <img src="./assets//skillz/1.png" alt="stack item">
                             <img src="./assets//skillz/17.png" alt="stack item">
                             <img src="./assets//skillz/9.png" alt="stack item">
                             <img src="./assets//skillz/8.png" alt="stack item">
                             <img src="./assets//skillz/6.png" alt="stack item">
                         </div>
-                        <div tabindex="0" class="mobileProjects--projectBox__buttons">
-                            <a class="redBtn hoverPurple" data-aos="fade-up"
+                        <div class="mobileProjects--projectBox__buttons">
+                            <a tabindex="0" class="pushEffect redBtn hoverPurple" data-aos="fade-up"
                                 href="https://widespreadtruck.github.io/online-store" target="_blank"
                                 rel="noopener noreferrer">Live Link</a>
-                            <a class="hoverWhite" data-aos="fade-up"
+                            <a tabindex="0" class="pushEffect hoverWhite" data-aos="fade-up"
                                 href="https://github.com/widespreadtruck/online-store" target="_blank"
                                 rel="noopener noreferrer">GitHub</a>
                         </div>
@@ -245,7 +246,7 @@
 
 
 
-                    <div class="mobileProjects--projectBox" data-aos="fade-up" data-aos-easing="ease-in-out">
+                    <!-- <div class="mobileProjects--projectBox" data-aos="fade-up" data-aos-easing="ease-in-out">
                         <div tabindex="0" class="mobileProjects--projectBox__imageBox"><img src="./assets/projects/laptopQuiz.png"
                                 alt="image of the project on a laptop screen"></div>
                         <div class="mobileProjects--projectBox__projectName">
@@ -264,70 +265,97 @@
                             <img src="./assets//skillz/7.png" alt="stack item">
                         </div>
                         <div tabindex="0" class="mobileProjects--projectBox__buttons">
-                            <a class="redBtn hoverPurple" data-aos="fade-up" href="https://widespreadtruck.github.io/quiz-app/" target="_blank" rel="noopener noreferrer">Live
+                            <a tabindex="0" class="pushEffect redBtn hoverPurple" data-aos="fade-up" href="https://widespreadtruck.github.io/quiz-app/" target="_blank" rel="noopener noreferrer">Live
                                 Link</a>
-                            <a class="hoverWhite" data-aos="fade-up" href="https://github.com/widespreadtruck/quiz-app" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a tabindex="0" class="pushEffect hoverWhite" data-aos="fade-up" href="https://github.com/widespreadtruck/quiz-app" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </div>
-                    </div>
+                    </div> -->
+
+
+
+                    
                     <div class="mobileProjects--projectBox" data-aos="fade-up" data-aos-easing="ease-in-out">
-                        <div tabindex="0" class="mobileProjects--projectBox__imageBox"><img src="./assets/projects/laptopCalculator.png" alt="image of the project on a laptop screen"></div>
+                        <div class="mobileProjects--projectBox__imageBox"><img src="./assets/projects/laptopCalculator.png" alt="image of the project on a laptop screen"></div>
                         <div class="mobileProjects--projectBox__projectName"><h3>Daily Budget Calculator</h3></div>
                         <div class="mobileProjects--projectBox__description">
                             <p>Mob programmed with 3 other Devs using React and Firebase. This app helps users track their daily budget based on the
                             amount of paycheck, amount of savings, number of days till next check, as well as daily expenditures.</p>
                             <h4>Stack used:</h4>
                         </div>
-                        <div tabindex="0" data-aos="zoom-in" class="mobileProjects--projectBox__stack">
+                        <div data-aos="zoom-in" class="mobileProjects--projectBox__stack">
                             <img src="./assets//skillz/1.png" alt="stack item">
                             <img src="./assets//skillz/3.png" alt="stack item">
                             <img src="./assets//skillz/8.png" alt="stack item">
                             <img src="./assets//skillz/9.png" alt="stack item">
                             <img src="./assets//skillz/7.png" alt="stack item">
                         </div>
-                        <div tabindex="0" class="mobileProjects--projectBox__buttons">
-                            <a class="redBtn hoverPurple" data-aos="fade-up" href="https://group-three-libraree-jamboree.github.io/project-six/"
+                        <div class="mobileProjects--projectBox__buttons">
+                            <a tabindex="0" class="pushEffect redBtn hoverPurple" data-aos="fade-up" href="https://group-three-libraree-jamboree.github.io/project-six/"
                             target="_blank" rel="noopener noreferrer">Live Link</a>
-                            <a class="hoverWhite" data-aos="fade-up" href="https://github.com/Group-Three-Libraree-Jamboree/project-six"
+                            <a tabindex="0" class="pushEffect hoverWhite" data-aos="fade-up" href="https://github.com/Group-Three-Libraree-Jamboree/project-six"
                             target="_blank" rel="noopener noreferrer">GitHub</a></div>
                     </div>
+
                     <div class="mobileProjects--projectBox" data-aos="fade-up" data-aos-easing="ease-in-out">
-                        <div tabindex="0" class="mobileProjects--projectBox__imageBox"><img src="./assets/projects/laptopSunshine.png" alt="image of the project on a laptop screen"></div>
-                        <div tabindex="0" class="mobileProjects--projectBox__projectName"><h3>Sunshine Hotel Website Template</h3></div>
-                        <div tabindex="0" class="mobileProjects--projectBox__description">
+                        <div class="mobileProjects--projectBox__imageBox"><img src="./assets/projects/laptopCalc.png" alt="image of the project on a laptop screen"></div>
+                        <div class="mobileProjects--projectBox__projectName"><h3>Tip Calculator</h3></div>
+                        <div class="mobileProjects--projectBox__description">
+                            <p>This simple app was built with Vanilla JavaScript, HTML5, and SCC3 to calculate total amount, total tips, individual amount as well as individual tips depending on the selected tip percentage and total number of people dining.</p>
+                            <h4>Stack used:</h4>
+                        </div>
+                        <div data-aos="zoom-in" class="mobileProjects--projectBox__stack">
+                            <img src="./assets//skillz/2.png" alt="stack item">
+                            <img src="./assets//skillz/9.png" alt="stack item">
+                            <img src="./assets//skillz/10.png" alt="stack item">
+                            <img src="./assets//skillz/7.png" alt="stack item">
+                            <img src="./assets//skillz/6.png" alt="stack item">
+                        </div>
+                        <div class="mobileProjects--projectBox__buttons">
+                            <a tabindex="0" class="pushEffect redBtn hoverPurple" data-aos="fade-up" href="https://widespreadtruck.github.io/tip-calculator/"
+                            target="_blank" rel="noopener noreferrer">Live Link</a>
+                            <a tabindex="0" class="pushEffect hoverWhite" data-aos="fade-up" href="https://github.com/widespreadtruck/tip-calculator"
+                            target="_blank" rel="noopener noreferrer">GitHub</a></div>                        
+                    </div>
+
+                    <div class="mobileProjects--projectBox" data-aos="fade-up" data-aos-easing="ease-in-out">
+                        <div class="mobileProjects--projectBox__imageBox"><img src="./assets/projects/laptopSunshine.png" alt="image of the project on a laptop screen"></div>
+                        <div class="mobileProjects--projectBox__projectName"><h3>Sunshine Hotel Website Template</h3></div>
+                        <div class="mobileProjects--projectBox__description">
                             <p>This is a three page website template. It is fully responsive: mobile, tablet, desktop. Includes a gallery, feedback form, a blog, comments etc. Made with love.</p>
                             <h4>Stack used:</h4>
                         </div>
-                        <div tabindex="0" data-aos="zoom-in" class="mobileProjects--projectBox__stack">
+                        <div data-aos="zoom-in" class="mobileProjects--projectBox__stack">
                             <img src="./assets//skillz/9.png" alt="stack item">
                             <img src="./assets//skillz/10.png" alt="stack item">
                             <img src="./assets//skillz/6.png" alt="stack item">
                             <img src="./assets//skillz/7.png" alt="stack item">
                             <img src="./assets//skillz/11.png" alt="stack item">
                         </div>
-                        <div tabindex="0" class="mobileProjects--projectBox__buttons">
-                            <a class="redBtn hoverPurple" data-aos="fade-up" href="https://widespreadtruck.github.io/nikita-guliaev-project-two/"
+                        <div class="mobileProjects--projectBox__buttons">
+                            <a tabindex="0" class="pushEffect redBtn hoverPurple" data-aos="fade-up" href="https://widespreadtruck.github.io/nikita-guliaev-project-two/"
                             target="_blank" rel="noopener noreferrer">Live Link</a>
-                            <a class="hoverWhite" data-aos="fade-up" href="https://github.com/widespreadtruck/nikita-guliaev-project-two"
+                            <a tabindex="0" class="pushEffect hoverWhite" data-aos="fade-up" href="https://github.com/widespreadtruck/nikita-guliaev-project-two"
                             target="_blank" rel="noopener noreferrer">GitHub</a></div>                        
                     </div>
+
                     <div class="mobileProjects--projectBox" data-aos="fade-up" data-aos-easing="ease-in-out">
-                        <div tabindex="0" class="mobileProjects--projectBox__imageBox"><img src="./assets/projects/laptopOne.png" alt="image of the project on a laptop screen"></div>
-                        <div tabindex="0" class="mobileProjects--projectBox__projectName"><h3>One Magazine Website Template</h3></div>
-                        <div tabindex="0" class="mobileProjects--projectBox__description">
+                        <div class="mobileProjects--projectBox__imageBox"><img src="./assets/projects/laptopOne.png" alt="image of the project on a laptop screen"></div>
+                        <div class="mobileProjects--projectBox__projectName"><h3>One Magazine Website Template</h3></div>
+                        <div class="mobileProjects--projectBox__description">
                             <p>Check out this slick website. It is fully responsive: mobile, tablet, desktop. Nice, simple and made with love.</p>
                             <h4>Stack used:</h4>
                         </div>
-                        <div tabindex="0" data-aos="zoom-in" class="mobileProjects--projectBox__stack">
+                        <div data-aos="zoom-in" class="mobileProjects--projectBox__stack">
                             <img src="./assets//skillz/9.png" alt="stack item">
                             <img src="./assets//skillz/10.png" alt="stack item">
                             <img src="./assets//skillz/6.png" alt="stack item">
                             <img src="./assets//skillz/7.png" alt="stack item">
                             <img src="./assets//skillz/11.png" alt="stack item">
                         </div>
-                        <div tabindex="0" class="mobileProjects--projectBox__buttons">
-                            <a class="redBtn hoverPurple" data-aos="fade-up" href="https://widespreadtruck.github.io/nikita-guliaev-project-one"
+                        <div class="mobileProjects--projectBox__buttons">
+                            <a tabindex="0" class="pushEffect redBtn hoverPurple" data-aos="fade-up" href="https://widespreadtruck.github.io/nikita-guliaev-project-one"
                             target="_blank" rel="noopener noreferrer">Live Link</a>
-                            <a class="hoverWhite" data-aos="fade-up" href="https://github.com/widespreadtruck/nikita-guliaev-project-one"
+                            <a tabindex="0" class="pushEffect hoverWhite" data-aos="fade-up" href="https://github.com/widespreadtruck/nikita-guliaev-project-one"
                             target="_blank" rel="noopener noreferrer">GitHub</a></div>                        
                     </div>
                 </div>
@@ -336,9 +364,9 @@
 
         <section class="contact" id="contact" data-aos="fade-up" data-aos-easing="ease-in-out">
             <div class="wrapper">
-                <div class="projects--title">
+                <div class="contacts--title">
                     <div class="redLine"></div>
-                    <h2 tabindex="0">Contacts 📬</h2>
+                    <h2>Contacts 📬</h2>
                 </div>
                 <div class="contact--container">
                     <div class="contact--container__left">
@@ -348,30 +376,30 @@
                         <div><img src="./assets//exp.png" alt="an illustration of a person with a laptop"></div>
                     </div>
                     <div class="contact--container__right">
-                        <h3 tabindex="0">Have a project? <br> Get in touch!</h3>
+                        <h3>Have a project? <br> Get in touch!</h3>
                         <div data-aos="fade-up" tabindex="0"><a href="mailto:hello@nikitaguliaev.com">hello@nikitaguliaev.com</a></div>
                         <p>-OR-</p>
                         <form method="POST" action="https://formspree.io/xqkyejev" class="contact--formBox">
-                                <label tabindex="0" for="name" aria-label="What's your name?"></label>
-                                <input
+                                <label for="name" aria-label="What's your name?"></label>
+                                <input tabindex="0"
                                 data-aos="fade-up"
                                 placeholder="Name"
                                 name="name"
                                 type="text" id="name">
-                                <label tabindex="0" for="email" aria-label="What's your email?"></label>
-                                <input
+                                <label for="email" aria-label="What's your email?"></label>
+                                <input tabindex="0"
                                 data-aos="fade-up"
                                 placeholder="Email"
                                 name="email"
                                 type="text" id="email">
-                                <label tabindex="0" for="message" aria-label="What's your message?"></label>
+                                <label for="message" aria-label="What's your message?"></label>
                                 <textarea 
                                 data-aos="fade-up"
                                 tabindex="0"
                                 placeholder="Message"
                                 name="message"
                                 type="text" id="message"></textarea>
-                                <button data-aos="fade-up" tabindex="0" type="submit" class="submit redBtn hoverPurple">Send</button>                            
+                                <button data-aos="fade-up" tabindex="0" type="submit" class="submit redBtn hoverPurple pushEffect">Send</button>                            
                         </form>
                     </div>
                 </div>
@@ -379,13 +407,21 @@
         <footer class="footer">
             <div class="wrapper">
                 <div class="footer--container">
-                    <h4 tabindex="0">Follow Me</h4>
-                    <ul class="footer-mobileLinks">
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nikita-guliaev-ma-808aab8a/">LinkedIn</a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/widespreadtruck">GitHub</a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/nikita_guliaev">Twitter</a>
+                    <!-- <h4>Follow</h4> -->
+                    <ul class="socialLinks">
+                        <li><a tabindex="0" target="_blank" rel="noopener noreferrer" href="https://twitter.com/nikita_guliaev"><i
+                                    class="fab fa-twitter-square hoverGlow"></i></a></li>
+                        <li><a tabindex="0" target="_blank" rel="noopener noreferrer" href="https://github.com/widespreadtruck"><i
+                                    class="fab fa-github-square hoverGlow"></i></a></li>
+                        <li><a tabindex="0" target="_blank" rel="noopener noreferrer"
+                                href="https://www.linkedin.com/in/nikita-guliaev-ma-808aab8a/"><i class="fab fa-linkedin hoverGlow"></i></a>
+                        </li>
+                        <li><a tabindex="0" target="_blank" rel="noopener noreferrer" href="https://dev.to/nikita_guliaev"><i
+                                    class="fab fa-dev hoverGlow"></i></a></li>
+                        <li><a tabindex="0" target="_blank" rel="noopener noreferrer" href="mailto:hello@nikitaguliaev.com"><i
+                                    class="fas fa-envelope-square hoverGlow"></i></a></li>
                     </ul>
-                    <p tabindex="0">© 2020 Nikita Guliaev. All rights reserved.</p>
+                    <p>© 2020 Nikita Guliaev. All rights reserved.</p>
                 </div>
             </div>
         </footer>

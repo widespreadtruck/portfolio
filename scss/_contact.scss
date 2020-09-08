@@ -1,37 +1,27 @@
-.contact {
-    min-height: 60rem;
-}
 
-.contact .projects--title {
+
+.contact .contacts--title {
     width: 100%;
     position: relative;
-    margin-top: 8rem;
+    // margin-top: 2rem;
 
-    .redLine {
-        position: absolute;
-        width: 5rem;
-        border-bottom: 3px solid $red;
-        top: 0rem;
-        left: calc((100% - 5rem) / 2);
-
-    }
+    // .redLine {
+    //     position: absolute;
+    //     width: 5rem;
+    //     border-bottom: 3px solid $red;
+    //     top: 0rem;
+    //     left: calc((100% - 5rem) / 2);
+    //     // padding-bottom: -2rem;
+    // }
     
     h2 {
-        text-align: center;
-        font-size: 6rem;
-        font-family: $heading-font;
-        margin: 0 auto;
-        margin: 1rem 0 8rem 0;
-        letter-spacing: 5px;
-        @include media("<tablet"){            
-            font-size: 4rem;
-        }
+        @include sectionHeaderStyles;
     }
 }
 
 
 @include media(">phone", "<=tablet") {
-    .contact .projects--title h2{
+    .contact .contacts--title h2{
         margin-bottom: 5rem;
     }
 
@@ -40,6 +30,7 @@
         text-align: center;
         margin-bottom: 5rem;
         line-height: 150%;
+        font-weight: 400;
 
         br {
             display: none;

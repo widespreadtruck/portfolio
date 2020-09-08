@@ -1,3 +1,16 @@
+$header-bg: rgb(12, 12, 12);
+$font-clr-08: rgba(245, 245, 245, 0.8);
+$font-clr-1: rgba(245, 245, 245, 1);
+$second-bg: rgb(12, 12, 12);
+$red: rgba(100, 64, 236, 0.8);
+$red1: rgba(100, 64, 236, 1);
+$headerSize: 5rem;
+$pFontSize: 2.6rem;
+$headerWeight: 400;
+$heading-font: "Khula", sans-serif;
+$body-font: "Nunito Sans", sans-serif;
+$wrapper-width: 82%;
+
 @mixin bor {
     border: 1px solid red
 }
@@ -20,26 +33,33 @@
     width: 15rem;
     height: 6rem;
     border-radius: 5px;
-    border: 2px solid $red;
+    border: 2px solid transparent;
     background-color: transparent;
-    color: white;
+    color: $font-clr-1;
     font-family: $body-font;
 }
 
-$header-bg: rgb(12, 12, 12);
-$font-clr: #ffffff;
-$second-bg: rgb(12, 12, 12);
-$red: rgba(100, 64, 236, 0.8);
 
-$heading-font: "Khula", sans-serif;
-$body-font: "Nunito Sans", sans-serif;
+@mixin sectionHeaderStyles {
+    text-align: center;
+    font-size: $headerSize;
+    font-family: $heading-font;
+    font-weight: $headerWeight;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
 
-$wrapper-width: 82%;
+    @include media("<tablet"){            
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: $font-clr-08;
 }
 
 
@@ -52,7 +72,6 @@ html {
 }
 
 body {
-    color: $font-clr;
     margin: 0;
     padding: 0;
     font-size: 17px;
@@ -60,7 +79,7 @@ body {
 
 a {
     text-decoration: none;
-    color: $font-clr;
+    color: $font-clr-08;
 }
 
 .wrapper {
@@ -76,15 +95,20 @@ a {
     cursor: pointer;
     background-color: $red;
     height: 50px !important;
-    &:hover {
-        color: rgba(255, 255, 255, 1);
-        box-shadow: 0px 0px 15px rgba(100, 64, 236, 1);
-        background-color: rgba(100, 64, 236, 1);
+    cursor: pointer;
+
+    a {
+        color: $font-clr-1;
     }
-    @include media(">phone", "<=tablet") {
-    height: 45px !important;
+    
+    &:hover {
+        box-shadow: 0px 0px 15px $red1;
+        background-color: $red1;
     }
 
+    @include media(">phone", "<=tablet") {
+    height: 40px !important;
+    }
 }
 
 // nav bar styles
@@ -138,7 +162,7 @@ a {
             padding-right: 2rem;
             height: 50px;
             font-size: 1.8rem;
-            color: rgba(245, 245, 245, 0.8);
+            // color: $font-clr-08;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -146,16 +170,17 @@ a {
     }
 }
 
-.header--nav__a:hover,
-.header--nav__a:active {
-    color: rgba(245, 245, 245, 1);
-        // box-shadow: 0px 0px 5px rgba(245, 245, 245, 1);
-    // border: 2px solid $red !important;
+.header--nav__a:hover {
+    color: $font-clr-1;
     transition: all 0.4s ease;
     padding: 0.5rem;
     border-radius: 5px;
     border: 1px solid white !important;
+}
 
+.header--nav__a:active {
+    padding-top: 7px;
+    transition: none;
 }
 
 //styles under nav bar
@@ -169,6 +194,11 @@ a {
         grid-template-columns: 5fr 3fr;
         grid-template-areas: "container-left container-right";
         overflow: hidden;
+        margin-bottom: 12rem;
+
+        @include media(">=phone", "<=tablet") {
+            margin-bottom: 0;
+        }
 
         .container-left {
             grid-area: "container-left";
@@ -178,6 +208,10 @@ a {
         .container-right {
             grid-area: "container-right";
             margin-left: 1rem;
+
+            @include media(">=phone", "<=tablet") {
+                margin-left: 0;
+            }
         }
     }
 }
@@ -198,94 +232,6 @@ a {
 }
 
 //I am Nikita styles
-.decor-triangle,
-.decor-circle,
-.decor-dotsLeft,
-.decor-circleRight {
-    position: absolute;
-    z-index: 1;
-}
-
-.decor-triangle {
-    top: 1rem;
-    left: 2rem;
-    width: 3rem;
-    animation: spin 15s linear infinite;
-    @keyframes spin {
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-}
-
-.decor-circle {
-    top: 10rem;
-    left: 0rem;
-    width: 290px;
-    z-index: -1;
-
-    @include media(">phone", "<=tablet") {
-        top: 15vh;
-        left: calc((100% - 250px) / 2);
-        width: 250px;
-    }
-
-}
-.decor-dotsLeft {
-    display: none;
-    bottom: -16vh;
-    left: 0;
-    animation: jump 3s ease-in-out infinite;
-    @keyframes jump {
-        0% {
-            bottom: -18vh;
-        }
-        50% {
-            bottom: -14vh;
-        }
-        100% {
-            bottom: -18vh
-        }
-    }
-
-
-    @include media(">phone", "<=tablet") {
-        bottom: -17vh;
-        left: 0;
-        animation: jump 3s ease-in-out infinite;
-        @keyframes jump {
-            0% {
-                bottom: -17vh;
-            }
-            50% {
-                bottom: -13vh;
-            }
-            100% {
-                bottom: -17vh
-            }
-        }
-    }
-
-
-    @include media(">=tablet") {
-        bottom: -16vh !important;
-        left: 0 !important;
-        @keyframes jump {
-            0% {
-                bottom: -16vh !important;
-            }
-            50% {
-                bottom: -12vh !important;
-            }
-            100% {
-                bottom: -16vh !important;
-            }
-        }
-    }
-
-}
-
-
 .iAmNikita {
     display: flex;
     flex-direction: column;
@@ -293,10 +239,11 @@ a {
     margin: auto;
     z-index: 3;
     position: relative;
-    padding-top: 9rem;
+    padding-top: 4rem;
 
     @include media(">phone", "<=tablet") {
         align-items: center;
+        padding-top: 3rem;
     }
 
     .Iam {
@@ -314,13 +261,14 @@ a {
         font-size: 60px;
         font-weight: 700;
         margin-top: 0;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
         letter-spacing: 5px;
         padding-right: 4rem;
 
-    @include media(">phone", "<=tablet") {
-        text-align: center;
-    }
+        @include media(">phone", "<=tablet") {
+            text-align: center;
+            padding-right: 0;
+        }
     }
 
     .frontEnd {
@@ -333,7 +281,7 @@ a {
 
 }
 
-.iAmNikita .socialLinks {
+.socialLinks {
     list-style: none;
     @include flexHor;
 
@@ -341,19 +289,21 @@ a {
     margin-bottom: 0;
     padding-left: 0;
     justify-content: space-between;
-    width: 190px;
+    width: 235px;
     
     li {
-        
         a {
             width: 4rem;
-            color: rgba(255, 255, 255, 0.8);
+            color: $font-clr-08;
             font-size: 4rem;
         }
     }
+    @include media (">phone", "<=tablet") {
+        margin-bottom: 5rem;
+    }
 }
 
-.iAmNikita .socialLinks li {
+.socialLinks li {
     @include media(">phone", "<=tablet") {
         margin-top: 1rem;
     }
@@ -365,9 +315,16 @@ a {
     }
 }
 
+.iAmNikita .socialLinks {
+    @include media(">phone", "<=tablet") {
+        margin-bottom: 12rem;
+        margin-top: 2rem;
+    }
+}
+
 .hoverGlow {
     &:hover {
-        color: rgba(255, 255, 255, 1);
+        color: $font-clr-1;
     }
 }
 
@@ -383,7 +340,6 @@ a {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 8rem;
         }
     }
     .container-right {
@@ -402,3 +358,6 @@ a {
     }
 }
 
+.holdTogether {
+    white-space: nowrap;
+}
