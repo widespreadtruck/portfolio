@@ -27,10 +27,10 @@ $(function() {
 
     // typed.js
     const typed = new Typed('#typed', {
-        strings: ["Frontend Web Developer", "With FinTech experience"],
-        typeSpeed: 70,
-        backSpeed: 20,
-        backDelay: 2000,
+        strings: ["Frontend Web3 Developer", "With FinTech experience"],
+        typeSpeed: 50,
+        backSpeed: 5,
+        backDelay: 1000,
         loop: true,
         loopCount: Infinity,
         showCursor: false
