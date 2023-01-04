@@ -27,7 +27,7 @@ $(function() {
 
     // typed.js
     const typed = new Typed('#typed', {
-        strings: ["Frontend Web3 Developer", "With FinTech experience"],
+        strings: ["Frontend / Blockchain Developer", "With FinTech experience"],
         typeSpeed: 50,
         backSpeed: 5,
         backDelay: 1000,
